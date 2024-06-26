@@ -1,4 +1,4 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_status
 pagefrontapp.com,pagefrontapp.com,NXDOMAIN,ok,2024-05-08 18:11:17,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""redemptionPeriod https://icann.org/epp#redemptionPeriod""]"
-mintere.site,mintere.site,NXDOMAIN,ok,2024-05-11 16:33:18,"[""pendingDelete https://icann.org/epp#pendingDelete"", ""serverHold https://icann.org/epp#serverHold"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""redemptionPeriod https://icann.org/epp#redemptionPeriod""]"
 instantcloud.cn,instantcloud.cn,NXDOMAIN,ok,2024-06-13 04:03:39,"[""pendingDelete"", ""clientHold"", ""inactive""]"
+mintere.site,mintere.site,NXDOMAIN,ok,2024-05-11 16:33:18,"[""pendingDelete https://icann.org/epp#pendingDelete"", ""serverHold https://icann.org/epp#serverHold"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""redemptionPeriod https://icann.org/epp#redemptionPeriod""]"
