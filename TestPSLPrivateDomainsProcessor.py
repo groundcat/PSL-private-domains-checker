@@ -2,7 +2,7 @@ import unittest
 import uuid
 from unittest.mock import patch
 
-from PSLPrivateDomainsProcessor import PSLPrivateDomainsProcessor
+from PSLPrivateDomainsProcessor import PSLPrivateDomainsProcessor, check_dns_status, get_whois_data
 
 
 class TestPSLPrivateDomainsProcessor(unittest.TestCase):
