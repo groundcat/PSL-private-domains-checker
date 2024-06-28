@@ -1,5 +1,6 @@
 import datetime
 import json
+
 import pandas as pd
 import requests
 import whoisdomain as whois
@@ -53,6 +54,7 @@ def check_dns_status(domain):
     Returns:
         str: The DNS status of the domain.
     """
+
     def make_request():
         responses = make_dns_request(domain, "NS")
         if None in responses:
@@ -89,6 +91,7 @@ def check_psl_txt_record(domain):
     Returns:
         str: The _psl TXT record status of the domain.
     """
+
     def make_request():
         responses = make_dns_request(f"_psl.{domain}", "TXT")
         if None in responses:
@@ -100,7 +103,8 @@ def check_psl_txt_record(domain):
         google_txt_records = [record.get("data", "") for record in google_txt]
         cloudflare_txt_records = [record.get("data", "").strip('"') for record in cloudflare_txt]
 
-        print(f"_psl TXT Records (Google): {google_txt_records},  _psl TXT Records (Cloudflare): {cloudflare_txt_records}")
+        print(
+            f"_psl TXT Records (Google): {google_txt_records},  _psl TXT Records (Cloudflare): {cloudflare_txt_records}")
 
         if google_txt_records == cloudflare_txt_records:
             for record in google_txt_records:
@@ -145,6 +149,7 @@ class PSLPrivateDomainsProcessor:
     """
     A class to process PSL private section domains, check their status, and save the results.
     """
+
     def __init__(self):
         """
         Initializes the PSLPrivateDomainsProcessor with default values and settings.
@@ -159,7 +164,8 @@ class PSLPrivateDomainsProcessor:
             "whois_status",
             "whois_domain_expiry_date",
             "whois_domain_status",
-            "psl_txt_status"
+            "psl_txt_status",
+            "expiry_check_status"
         ]
         self.df = pd.DataFrame(columns=self.columns)
         self.icann_domains = set()
@@ -262,7 +268,15 @@ class PSLPrivateDomainsProcessor:
             dns_status = check_dns_status(domain)
             psl_txt_status = check_psl_txt_record(domain)
 
-            print(f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}, PSL TXT Status: {psl_txt_status}")
+            if whois_status == "ERROR":
+                expiry_check_status = "ERROR"
+            else:
+                expiry_check_status = "ok" if whois_expiry and whois_expiry >= (
+                        datetime.datetime.utcnow() + datetime.timedelta(days=365 * 2)) else "FAIL_2Y"
+
+            print(
+                f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}, "
+                f"PSL TXT Status: {psl_txt_status}, Expiry Check: {expiry_check_status}")
 
             data.append({
                 "psl_entry": domain,
@@ -271,7 +285,8 @@ class PSLPrivateDomainsProcessor:
                 "whois_domain_expiry_date": whois_expiry,
                 "whois_status": whois_status,
                 "dns_status": dns_status,
-                "psl_txt_status": psl_txt_status
+                "psl_txt_status": psl_txt_status,
+                "expiry_check_status": expiry_check_status
             })
 
         self.df = pd.DataFrame(data, columns=self.columns)
@@ -313,6 +328,13 @@ class PSLPrivateDomainsProcessor:
         missing_psl_txt_df = self.df[self.df["psl_txt_status"] == "invalid"].sort_values(by="psl_entry")
         missing_psl_txt_df.to_csv("data/missing_psl_txt.csv", index=False)
 
+    def save_expiry_less_than_2yrs_results(self):
+        """
+        Saves domains with WHOIS expiry date less than 2 years from now to data/expiry_less_than_2yrs.csv.
+        """
+        expiry_less_than_2yrs_df = self.df[self.df["expiry_check_status"] == "FAIL_2Y"].sort_values(by="psl_entry")
+        expiry_less_than_2yrs_df.to_csv("data/expiry_less_than_2yrs.csv", index=False)
+
     def run(self):
         """
         Executes the entire processing pipeline.
@@ -324,6 +346,7 @@ class PSLPrivateDomainsProcessor:
         self.save_invalid_results()
         self.save_hold_results()
         self.save_missing_psl_txt_results()
+        self.save_expiry_less_than_2yrs_results()
 
 
 if __name__ == "__main__":
