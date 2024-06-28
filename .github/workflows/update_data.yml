@@ -2,7 +2,7 @@ name: Update Domain Data
 
 on:
   schedule:
-    - cron: '0 0 */2 * *'  # Runs at 00:00 UTC every other day
+    - cron: '0 0 * * 1'  # Runs at 00:00 UTC every other day
   workflow_dispatch:  # Allows manual trigger from GitHub UI
 
 jobs:
