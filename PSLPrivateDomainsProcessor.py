@@ -1,12 +1,21 @@
 import datetime
 import json
-
 import pandas as pd
 import requests
 import whoisdomain as whois
 
 
 def make_dns_request(domain, record_type):
+    """
+    Makes DNS requests to both Google and Cloudflare DNS APIs.
+
+    Args:
+        domain (str): The domain to query.
+        record_type (str): The type of DNS record to query.
+
+    Returns:
+        list: A list containing the JSON responses from Google and Cloudflare.
+    """
     urls = [
         f"https://dns.google/resolve?name={domain}&type={record_type}",
         f"https://cloudflare-dns.com/dns-query?name={domain}&type={record_type}"
@@ -35,6 +44,15 @@ def make_dns_request(domain, record_type):
 
 
 def check_dns_status(domain):
+    """
+    Checks the DNS status of a domain using Google and Cloudflare DNS APIs.
+
+    Args:
+        domain (str): The domain to check.
+
+    Returns:
+        str: The DNS status of the domain.
+    """
     def make_request():
         responses = make_dns_request(domain, "NS")
         if None in responses:
@@ -62,6 +80,15 @@ def check_dns_status(domain):
 
 
 def check_psl_txt_record(domain):
+    """
+    Checks the _psl TXT record for a domain using Google and Cloudflare DNS APIs.
+
+    Args:
+        domain (str): The domain to check.
+
+    Returns:
+        str: The _psl TXT record status of the domain.
+    """
     def make_request():
         responses = make_dns_request(f"_psl.{domain}", "TXT")
         if None in responses:
@@ -73,8 +100,7 @@ def check_psl_txt_record(domain):
         google_txt_records = [record.get("data", "") for record in google_txt]
         cloudflare_txt_records = [record.get("data", "").strip('"') for record in cloudflare_txt]
 
-        print(
-            f"_psl TXT Records (Google): {google_txt_records},  _psl TXT Records (Cloudflare): {cloudflare_txt_records}")
+        print(f"_psl TXT Records (Google): {google_txt_records},  _psl TXT Records (Cloudflare): {cloudflare_txt_records}")
 
         if google_txt_records == cloudflare_txt_records:
             for record in google_txt_records:
@@ -93,6 +119,15 @@ def check_psl_txt_record(domain):
 
 
 def get_whois_data(domain):
+    """
+    Retrieves WHOIS data for a domain using the whoisdomain package.
+
+    Args:
+        domain (str): The domain to query.
+
+    Returns:
+        tuple: A tuple containing WHOIS domain status, expiry date, and WHOIS status.
+    """
     try:
         d = whois.query(domain)
         whois_domain_status = d.statuses
@@ -107,7 +142,13 @@ def get_whois_data(domain):
 
 
 class PSLPrivateDomainsProcessor:
+    """
+    A class to process PSL private section domains, check their status, and save the results.
+    """
     def __init__(self):
+        """
+        Initializes the PSLPrivateDomainsProcessor with default values and settings.
+        """
         self.psl_url = "https://raw.githubusercontent.com/publicsuffix/list/master/public_suffix_list.dat"
         self.psl_icann_marker = "// ===BEGIN ICANN DOMAINS==="
         self.psl_private_marker = "// ===BEGIN PRIVATE DOMAINS==="
@@ -124,6 +165,12 @@ class PSLPrivateDomainsProcessor:
         self.icann_domains = set()
 
     def fetch_psl_data(self):
+        """
+        Fetches the PSL data from the specified URL.
+
+        Returns:
+            str: The raw PSL data.
+        """
         print("Fetching PSL data from URL...")
         response = requests.get(self.psl_url)
         psl_data = response.text
@@ -131,26 +178,42 @@ class PSLPrivateDomainsProcessor:
         return psl_data
 
     def parse_domain(self, domain):
-        # Remove any leading markers that we don't need for the purpose of this script
+        """
+        Parses and normalizes a domain.
+
+        Args:
+            domain (str): The domain to parse.
+
+        Returns:
+            str: The normalized domain.
+
+        Raises:
+            ValueError: If no valid top-level domain is found.
+        """
         domain = domain.lstrip('*.')  # wildcards (*)
         domain = domain.lstrip('!')  # bangs (!)
 
-        # Split the domain into parts
         parts = domain.split('.')
 
-        # Traverse the domain parts from the top-level domain upwards
         for i in range(len(parts)):
             candidate = '.'.join(parts[i:])
             if candidate in self.icann_domains:
                 continue
             elif '.'.join(parts[i + 1:]) in self.icann_domains:
-                # convert punycode to ASCII to support IDN domains
                 return candidate.encode('idna').decode('ascii')
 
-        # If no valid domain is found, raise an error
         raise ValueError(f"No valid top-level domain found in the provided domain: {domain}")
 
     def parse_psl_data(self, psl_data):
+        """
+        Parses the fetched PSL data and separates ICANN and private domains.
+
+        Args:
+            psl_data (str): The raw PSL data.
+
+        Returns:
+            list: A list of private domains.
+        """
         print("Parsing PSL data...")
 
         lines = psl_data.splitlines()
@@ -180,24 +243,26 @@ class PSLPrivateDomainsProcessor:
         print(f"Private domains to be processed: {len(private_domains)}\n"
               f"ICANN domains: {len(self.icann_domains)}")
 
-        # Parse each domain
         private_domains = [self.parse_domain(domain) for domain in private_domains]
-
-        # Remove duplicates
         private_domains = list(set(private_domains))
         print("Private domains in the publicly registrable name space: ", len(private_domains))
 
         return private_domains
 
     def process_domains(self, domains):
+        """
+        Processes each domain, performing DNS, WHOIS, and _psl TXT record checks.
+
+        Args:
+            domains (list): A list of domains to process.
+        """
         data = []
         for domain in domains:
             whois_domain_status, whois_expiry, whois_status = get_whois_data(domain)
             dns_status = check_dns_status(domain)
             psl_txt_status = check_psl_txt_record(domain)
 
-            print(
-                f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}, PSL TXT Status: {psl_txt_status}")
+            print(f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}, PSL TXT Status: {psl_txt_status}")
 
             data.append({
                 "psl_entry": domain,
@@ -212,15 +277,19 @@ class PSLPrivateDomainsProcessor:
         self.df = pd.DataFrame(data, columns=self.columns)
 
     def save_results(self):
+        """
+        Saves all processed domain data to data/all.csv.
+        """
         sorted_df = self.df.sort_values(by="psl_entry")
         sorted_df.to_csv("data/all.csv", index=False)
 
     def save_invalid_results(self):
-        # Save nxdomain.csv
+        """
+        Saves domains with invalid DNS or expired WHOIS data to data/nxdomain.csv and data/expired.csv.
+        """
         nxdomain_df = self.df[self.df["dns_status"] != "ok"].sort_values(by="psl_entry")
         nxdomain_df.to_csv("data/nxdomain.csv", index=False)
 
-        # Save expired.csv
         today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
         expired_df = self.df[
             self.df["whois_domain_expiry_date"].notnull() &
@@ -228,23 +297,33 @@ class PSLPrivateDomainsProcessor:
             ].sort_values(by="psl_entry")
         expired_df.to_csv("data/expired.csv", index=False)
 
-        # Save missing_psl_txt.csv
-        missing_psl_txt_df = self.df[self.df["psl_txt_status"] == "invalid"].sort_values(by="psl_entry")
-        missing_psl_txt_df.to_csv("data/missing_psl_txt.csv", index=False)
-
     def save_hold_results(self):
+        """
+        Saves domains with WHOIS status containing any form of "hold" to data/hold.csv.
+        """
         hold_df = self.df[
             self.df["whois_domain_status"].str.contains("hold", case=False, na=False)
         ].sort_values(by="psl_entry")
         hold_df.to_csv("data/hold.csv", index=False)
 
+    def save_missing_psl_txt_results(self):
+        """
+        Saves domains with invalid _psl TXT records to data/missing_psl_txt.csv.
+        """
+        missing_psl_txt_df = self.df[self.df["psl_txt_status"] == "invalid"].sort_values(by="psl_entry")
+        missing_psl_txt_df.to_csv("data/missing_psl_txt.csv", index=False)
+
     def run(self):
+        """
+        Executes the entire processing pipeline.
+        """
         psl_data = self.fetch_psl_data()
         domains = self.parse_psl_data(psl_data)
         self.process_domains(domains)
         self.save_results()
         self.save_invalid_results()
         self.save_hold_results()
+        self.save_missing_psl_txt_results()
 
 
 if __name__ == "__main__":
