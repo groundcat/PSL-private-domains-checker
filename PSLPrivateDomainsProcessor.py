@@ -40,6 +40,26 @@ def get_whois_data(domain):
     return whois_domain_status, whois_expiry, whois_status
 
 
+def check_psl_txt_record(domain):
+    def make_request():
+        try:
+            url = f"https://dns.google/resolve?name=_psl.{domain}&type=TXT"
+            response = requests.get(url)
+            json_response = response.json()
+            txt_records = json_response.get("Answer", [])
+            for record in txt_records:
+                if "github.com/publicsuffix/list/pull/" in record.get("data", ""):
+                    return "valid"
+            return "invalid"
+        except Exception as e:
+            return "ERROR"
+
+    psl_txt_status = make_request()
+    if psl_txt_status == "ERROR":  # Give it another try
+        psl_txt_status = make_request()
+    return psl_txt_status
+
+
 class PSLPrivateDomainsProcessor:
     def __init__(self):
         self.psl_url = "https://raw.githubusercontent.com/publicsuffix/list/master/public_suffix_list.dat"
@@ -52,6 +72,7 @@ class PSLPrivateDomainsProcessor:
             "whois_status",
             "whois_domain_expiry_date",
             "whois_domain_status",
+            "psl_txt_status"
         ]
         self.df = pd.DataFrame(columns=self.columns)
         self.icann_domains = set()
@@ -127,9 +148,10 @@ class PSLPrivateDomainsProcessor:
 
             whois_domain_status, whois_expiry, whois_status = get_whois_data(domain)
             dns_status = check_dns_status(domain)
+            psl_txt_status = check_psl_txt_record(domain)
 
             print(
-                f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}")
+                f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}, PSL TXT Status: {psl_txt_status}")
 
             data.append({
                 "psl_entry": domain,
@@ -137,7 +159,8 @@ class PSLPrivateDomainsProcessor:
                 "whois_domain_status": json.dumps(whois_domain_status),
                 "whois_domain_expiry_date": whois_expiry,
                 "whois_status": whois_status,
-                "dns_status": dns_status
+                "dns_status": dns_status,
+                "psl_txt_status": psl_txt_status
             })
 
         self.df = pd.DataFrame(data, columns=self.columns)
@@ -157,6 +180,10 @@ class PSLPrivateDomainsProcessor:
             (self.df["whois_domain_expiry_date"].astype(str).str[:10] < today_str)
         ]
         expired_df.to_csv("data/expired.csv", index=False)
+
+        # Save missing_psl_txt.csv
+        missing_psl_txt_df = self.df[self.df["psl_txt_status"] == "invalid"]
+        missing_psl_txt_df.to_csv("data/missing_psl_txt.csv", index=False)
 
     def save_hold_results(self):
         hold_df = self.df[
