@@ -3,7 +3,7 @@ import json
 
 import pandas as pd
 import requests
-import whois
+import whoisdomain as whois
 
 
 def make_dns_request(domain, record_type):
@@ -28,7 +28,7 @@ def make_dns_request(domain, record_type):
                 # print(f"URL: {url}, Status Code: {response.status_code}")
                 responses.append(None)
         except Exception as e:
-            print(f"URL: {url}, Exception: {e}")
+            print(f"URL: {url}, DNS Exception: {e}")
             responses.append(None)
 
     return responses
@@ -73,7 +73,7 @@ def check_psl_txt_record(domain):
         google_txt_records = [record.get("data", "") for record in google_txt]
         cloudflare_txt_records = [record.get("data", "").strip('"') for record in cloudflare_txt]
 
-        print(f"Google TXT Records: {google_txt_records}, Cloudflare TXT Records: {cloudflare_txt_records}")
+        print(f"_psl TXT Records (Google): {google_txt_records},  _psl TXT Records (Cloudflare): {cloudflare_txt_records}")
 
         if google_txt_records == cloudflare_txt_records:
             for record in google_txt_records:
@@ -93,13 +93,12 @@ def check_psl_txt_record(domain):
 
 def get_whois_data(domain):
     try:
-        w = whois.whois(domain)
-        whois_domain_status = w.status
-        whois_expiry = w.expiration_date
-        if isinstance(whois_expiry, list):
-            whois_expiry = whois_expiry[0]
+        d = whois.query(domain)
+        whois_domain_status = d.statuses
+        whois_expiry = d.expiration_date
         whois_status = "ok"
     except Exception as e:
+        print(f"WHOIS Exception: {e}")
         whois_domain_status = None
         whois_expiry = None
         whois_status = "ERROR"

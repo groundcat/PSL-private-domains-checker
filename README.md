@@ -12,11 +12,19 @@ It performs WHOIS checks on these domains and saves the results into CSV files f
 - `requests`
 - `pandas`
 - `python-whois`
+- `whoisdomain`
 
 You can install the required packages using pip:
 
 ```sh
 pip install -r requirements.txt
+```
+
+Ensure that `whois` is installed on your operating system.
+
+```sh
+sudo apt install whois  # Debian/Ubuntu
+sudo yum install whois  # Fedora/Centos/Rocky
 ```
 
 ## Usage
