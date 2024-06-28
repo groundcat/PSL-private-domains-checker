@@ -1,5 +1,6 @@
 import datetime
 import json
+import time
 
 import pandas as pd
 import requests
@@ -73,11 +74,12 @@ def check_dns_status(domain):
         else:
             return "INCONSISTENT"
 
-    for _ in range(3):
+    for _ in range(5):
         dns_status = make_request()
         print(f"Attempt {_ + 1}, DNS Status: {dns_status}")
         if dns_status not in ["ERROR", "INCONSISTENT"]:
             return dns_status
+        time.sleep(1)
     return "INCONSISTENT"
 
 
@@ -91,6 +93,8 @@ def check_psl_txt_record(domain):
     Returns:
         str: The _psl TXT record status of the domain.
     """
+    # Prepare the domain for the TXT check
+    domain = domain.lstrip('*.').lstrip('!').encode('idna').decode('ascii')
 
     def make_request():
         responses = make_dns_request(f"_psl.{domain}", "TXT")
@@ -114,11 +118,12 @@ def check_psl_txt_record(domain):
         else:
             return "INCONSISTENT"
 
-    for _ in range(3):
+    for _ in range(5):
         psl_txt_status = make_request()
         print(f"Attempt {_ + 1}, PSL TXT Status: {psl_txt_status}")
         if psl_txt_status not in ["ERROR", "INCONSISTENT"]:
             return psl_txt_status
+        time.sleep(1)
     return "INCONSISTENT"
 
 
@@ -218,14 +223,15 @@ class PSLPrivateDomainsProcessor:
             psl_data (str): The raw PSL data.
 
         Returns:
-            list: A list of private domains.
+            tuple: A tuple containing the unparsed private domains and the parsed private domains.
         """
         print("Parsing PSL data...")
 
         lines = psl_data.splitlines()
         process_icann = False
         process_private = False
-        private_domains = []
+        raw_private_domains = []
+        parsed_private_domains = []
 
         for line in lines:
             stripped_line = line.strip()
@@ -244,29 +250,32 @@ class PSLPrivateDomainsProcessor:
             if process_icann:
                 self.icann_domains.add(stripped_line)
             elif process_private:
-                private_domains.append(stripped_line)
+                raw_private_domains.append(stripped_line)
+                parsed_private_domains.append(stripped_line)
 
-        print(f"Private domains to be processed: {len(private_domains)}\n"
+        print(f"Private domains to be processed: {len(parsed_private_domains)}\n"
               f"ICANN domains: {len(self.icann_domains)}")
 
-        private_domains = [self.parse_domain(domain) for domain in private_domains]
-        private_domains = list(set(private_domains))
-        print("Private domains in the publicly registrable name space: ", len(private_domains))
+        parsed_private_domains = [self.parse_domain(domain) for domain in parsed_private_domains]
+        raw_private_domains = list(set(raw_private_domains))
+        parsed_private_domains = list(set(parsed_private_domains))
+        print("Private domains in the publicly registrable name space: ", len(parsed_private_domains))
 
-        return private_domains
+        return raw_private_domains, parsed_private_domains
 
-    def process_domains(self, domains):
+    def process_domains(self, raw_domains, domains):
         """
         Processes each domain, performing DNS, WHOIS, and _psl TXT record checks.
 
         Args:
+            raw_domains (list): A list of unparsed domains to process.
             domains (list): A list of domains to process.
         """
         data = []
-        for domain in domains:
+        for raw_domain, domain in zip(raw_domains, domains):
             whois_domain_status, whois_expiry, whois_status = get_whois_data(domain)
             dns_status = check_dns_status(domain)
-            psl_txt_status = check_psl_txt_record(domain)
+            psl_txt_status = check_psl_txt_record(raw_domain)
 
             if whois_status == "ERROR":
                 expiry_check_status = "ERROR"
@@ -340,8 +349,8 @@ class PSLPrivateDomainsProcessor:
         Executes the entire processing pipeline.
         """
         psl_data = self.fetch_psl_data()
-        domains = self.parse_psl_data(psl_data)
-        self.process_domains(domains)
+        raw_domains, domains = self.parse_psl_data(psl_data)
+        self.process_domains(raw_domains, domains)
         self.save_results()
         self.save_invalid_results()
         self.save_hold_results()
