@@ -48,6 +48,7 @@ python PSLPrivateDomainsProcessor.py
 - `process_domains(domains)`: Processes each domain, performing DNS and WHOIS checks.
 - `save_results()`: Saves all processed domain data to `data/all.csv`.
 - `save_invalid_results()`: Saves domains with invalid DNS or expired WHOIS data to `data/nxdomain.csv` and `data/expired.csv`.
+- `save_hold_results()`: Saves domains with WHOIS status containing any form of "hold" to `data/hold.csv`.
 - `run()`: Executes the entire processing pipeline.
 
 ## Output
@@ -57,6 +58,7 @@ The script generates the following CSV files in the `data` directory:
 - `all.csv`: Contains all processed domain data.
 - `nxdomain.csv`: Contains domains that could not be resolved (`NXDOMAIN`).
 - `expired.csv`: Contains domains with expired WHOIS records.
+- `hold.csv`: Contains domains with WHOIS status indicating any kind of "hold".
 
 ## Example
 
