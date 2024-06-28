@@ -73,7 +73,8 @@ def check_psl_txt_record(domain):
         google_txt_records = [record.get("data", "") for record in google_txt]
         cloudflare_txt_records = [record.get("data", "").strip('"') for record in cloudflare_txt]
 
-        print(f"_psl TXT Records (Google): {google_txt_records},  _psl TXT Records (Cloudflare): {cloudflare_txt_records}")
+        print(
+            f"_psl TXT Records (Google): {google_txt_records},  _psl TXT Records (Cloudflare): {cloudflare_txt_records}")
 
         if google_txt_records == cloudflare_txt_records:
             for record in google_txt_records:
@@ -130,8 +131,9 @@ class PSLPrivateDomainsProcessor:
         return psl_data
 
     def parse_domain(self, domain):
-        # Remove any leading '*.' parts
-        domain = domain.lstrip('*.')
+        # Remove any leading markers that we don't need for the purpose of this script
+        domain = domain.lstrip('*.')  # wildcards (*)
+        domain = domain.lstrip('!')  # bangs (!)
 
         # Split the domain into parts
         parts = domain.split('.')
