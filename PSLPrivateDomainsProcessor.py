@@ -166,11 +166,12 @@ class PSLPrivateDomainsProcessor:
         self.df = pd.DataFrame(data, columns=self.columns)
 
     def save_results(self):
-        self.df.to_csv("data/all.csv", index=False)
+        sorted_df = self.df.sort_values(by="psl_entry")
+        sorted_df.to_csv("data/all.csv", index=False)
 
     def save_invalid_results(self):
         # Save nxdomain.csv
-        nxdomain_df = self.df[self.df["dns_status"] != "ok"]
+        nxdomain_df = self.df[self.df["dns_status"] != "ok"].sort_values(by="psl_entry")
         nxdomain_df.to_csv("data/nxdomain.csv", index=False)
 
         # Save expired.csv
@@ -178,17 +179,17 @@ class PSLPrivateDomainsProcessor:
         expired_df = self.df[
             self.df["whois_domain_expiry_date"].notnull() &
             (self.df["whois_domain_expiry_date"].astype(str).str[:10] < today_str)
-        ]
+        ].sort_values(by="psl_entry")
         expired_df.to_csv("data/expired.csv", index=False)
 
         # Save missing_psl_txt.csv
-        missing_psl_txt_df = self.df[self.df["psl_txt_status"] == "invalid"]
+        missing_psl_txt_df = self.df[self.df["psl_txt_status"] == "invalid"].sort_values(by="psl_entry")
         missing_psl_txt_df.to_csv("data/missing_psl_txt.csv", index=False)
 
     def save_hold_results(self):
         hold_df = self.df[
             self.df["whois_domain_status"].str.contains("hold", case=False, na=False)
-        ]
+        ].sort_values(by="psl_entry")
         hold_df.to_csv("data/hold.csv", index=False)
 
     def run(self):
