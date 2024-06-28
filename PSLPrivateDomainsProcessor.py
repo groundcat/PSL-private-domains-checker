@@ -1,28 +1,94 @@
 import datetime
 import json
-import os
+
 import pandas as pd
 import requests
 import whois
 
 
+def make_dns_request(domain, record_type):
+    urls = [
+        f"https://dns.google/resolve?name={domain}&type={record_type}",
+        f"https://cloudflare-dns.com/dns-query?name={domain}&type={record_type}"
+    ]
+
+    headers = {
+        "accept": "application/dns-json"
+    }
+
+    responses = []
+    for url in urls:
+        try:
+            response = requests.get(url, headers=headers)
+            if response.status_code == 200:
+                json_response = response.json()
+                # print(f"URL: {url}, Response: {json_response}")
+                responses.append(json_response)
+            else:
+                # print(f"URL: {url}, Status Code: {response.status_code}")
+                responses.append(None)
+        except Exception as e:
+            print(f"URL: {url}, Exception: {e}")
+            responses.append(None)
+
+    return responses
+
+
 def check_dns_status(domain):
     def make_request():
-        try:
-            url = f"https://dns.google/resolve?name={domain}&type=NS"
-            response = requests.get(url)
-            json_response = response.json()
-            if json_response.get("Status") == 3:
+        responses = make_dns_request(domain, "NS")
+        if None in responses:
+            return "ERROR"
+
+        google_status = responses[0].get("Status")
+        cloudflare_status = responses[1].get("Status")
+
+        print(f"Google Status: {google_status}, Cloudflare Status: {cloudflare_status}")
+
+        if google_status == cloudflare_status:
+            if google_status == 3:
                 return "NXDOMAIN"
             else:
                 return "ok"
-        except Exception as e:
+        else:
+            return "INCONSISTENT"
+
+    for _ in range(3):
+        dns_status = make_request()
+        print(f"Attempt {_ + 1}, DNS Status: {dns_status}")
+        if dns_status not in ["ERROR", "INCONSISTENT"]:
+            return dns_status
+    return "INCONSISTENT"
+
+
+def check_psl_txt_record(domain):
+    def make_request():
+        responses = make_dns_request(f"_psl.{domain}", "TXT")
+        if None in responses:
             return "ERROR"
 
-    dns_status = make_request()
-    if dns_status == "ERROR":  # Give it another try
-        dns_status = make_request()
-    return dns_status
+        google_txt = responses[0].get("Answer", [])
+        cloudflare_txt = responses[1].get("Answer", [])
+
+        google_txt_records = [record.get("data", "") for record in google_txt]
+        cloudflare_txt_records = [record.get("data", "").strip('"') for record in cloudflare_txt]
+
+        print(f"Google TXT Records: {google_txt_records}, Cloudflare TXT Records: {cloudflare_txt_records}")
+
+        if google_txt_records == cloudflare_txt_records:
+            for record in google_txt_records:
+                if "github.com/publicsuffix/list/pull/" in record:
+                    return "valid"
+            return "invalid"
+        else:
+            return "INCONSISTENT"
+
+    for _ in range(3):
+        psl_txt_status = make_request()
+        print(f"Attempt {_ + 1}, PSL TXT Status: {psl_txt_status}")
+        if psl_txt_status not in ["ERROR", "INCONSISTENT"]:
+            return psl_txt_status
+    return "INCONSISTENT"
 
 
 def get_whois_data(domain):
@@ -38,26 +104,6 @@ def get_whois_data(domain):
         whois_expiry = None
         whois_status = "ERROR"
     return whois_domain_status, whois_expiry, whois_status
-
-
-def check_psl_txt_record(domain):
-    def make_request():
-        try:
-            url = f"https://dns.google/resolve?name=_psl.{domain}&type=TXT"
-            response = requests.get(url)
-            json_response = response.json()
-            txt_records = json_response.get("Answer", [])
-            for record in txt_records:
-                if "github.com/publicsuffix/list/pull/" in record.get("data", ""):
-                    return "valid"
-            return "invalid"
-        except Exception as e:
-            return "ERROR"
-
-    psl_txt_status = make_request()
-    if psl_txt_status == "ERROR":  # Give it another try
-        psl_txt_status = make_request()
-    return psl_txt_status
 
 
 class PSLPrivateDomainsProcessor:
@@ -145,7 +191,6 @@ class PSLPrivateDomainsProcessor:
     def process_domains(self, domains):
         data = []
         for domain in domains:
-
             whois_domain_status, whois_expiry, whois_status = get_whois_data(domain)
             dns_status = check_dns_status(domain)
             psl_txt_status = check_psl_txt_record(domain)
@@ -179,7 +224,7 @@ class PSLPrivateDomainsProcessor:
         expired_df = self.df[
             self.df["whois_domain_expiry_date"].notnull() &
             (self.df["whois_domain_expiry_date"].astype(str).str[:10] < today_str)
-        ].sort_values(by="psl_entry")
+            ].sort_values(by="psl_entry")
         expired_df.to_csv("data/expired.csv", index=False)
 
         # Save missing_psl_txt.csv
