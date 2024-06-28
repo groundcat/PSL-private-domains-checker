@@ -158,12 +158,19 @@ class PSLPrivateDomainsProcessor:
         ]
         expired_df.to_csv("data/expired.csv", index=False)
 
+    def save_hold_results(self):
+        hold_df = self.df[
+            self.df["whois_domain_status"].str.contains("hold", case=False, na=False)
+        ]
+        hold_df.to_csv("data/hold.csv", index=False)
+
     def run(self):
         psl_data = self.fetch_psl_data()
         domains = self.parse_psl_data(psl_data)
         self.process_domains(domains)
         self.save_results()
         self.save_invalid_results()
+        self.save_hold_results()
 
 
 if __name__ == "__main__":
