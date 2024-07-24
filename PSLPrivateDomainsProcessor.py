@@ -4,7 +4,8 @@ import time
 
 import pandas as pd
 import requests
-import whoisdomain as whois
+import whois as whois_fallback  # python-whois package
+import whoisdomain as whois  # whoisdomain package
 
 
 def make_dns_request(domain, record_type):
@@ -130,6 +131,7 @@ def check_psl_txt_record(domain):
 def get_whois_data(domain):
     """
     Retrieves WHOIS data for a domain using the whoisdomain package.
+    Falls back to python-whois if whoisdomain fails.
 
     Args:
         domain (str): The domain to query.
@@ -143,10 +145,19 @@ def get_whois_data(domain):
         whois_expiry = d.expiration_date
         whois_status = "ok"
     except Exception as e:
-        print(f"WHOIS Exception: {e}")
-        whois_domain_status = None
-        whois_expiry = None
-        whois_status = "ERROR"
+        print(f"whoisdomain Exception: {e}")
+        try:
+            w = whois_fallback.whois(domain)
+            whois_domain_status = w.status
+            whois_expiry = w.expiration_date
+            if isinstance(whois_expiry, list):
+                whois_expiry = whois_expiry[0]
+            whois_status = "ok"
+        except Exception as fallback_e:
+            print(f"python-whois Exception: {fallback_e}")
+            whois_domain_status = None
+            whois_expiry = None
+            whois_status = "ERROR"
     return whois_domain_status, whois_expiry, whois_status
 
 
