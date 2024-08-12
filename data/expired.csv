@@ -1,3 +1,5 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_status,psl_txt_status,expiry_check_status
-wedeploy.me,wedeploy.me,NXDOMAIN,ok,2024-06-18 10:57:30,"[""redemptionPeriod https://icann.org/epp#redemptionPeriod""]",valid,FAIL_2Y
+16-b.it,16-b.it,ok,ok,2024-08-05 00:00:00,"[""ok / autoRenewPeriod""]",valid,FAIL_2Y
+32-b.it,32-b.it,ok,ok,2024-08-05 00:00:00,"[""ok / autoRenewPeriod""]",invalid,FAIL_2Y
+dapps.earth,dapps.earth,ok,ok,2024-08-06 05:03:02,"[""autoRenewPeriod https://icann.org/epp#autoRenewPeriod"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 wellbeingzone.co.uk,wellbeingzone.co.uk,ok,ok,2024-07-13 00:00:00,"[""Renewal required.""]",valid,FAIL_2Y

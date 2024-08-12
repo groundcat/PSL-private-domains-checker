@@ -1,9 +1,8 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_status,psl_txt_status,expiry_check_status
 001www.com,001www.com,NXDOMAIN,ok,2024-10-08 18:59:52,"[""clientHold https://icann.org/epp#clientHold"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 blogspot.mr,blogspot.mr,NXDOMAIN,ok,,null,valid,FAIL_2Y
-co.krd,co.krd,NXDOMAIN,ok,2024-09-23 06:25:55,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
-dynv6.net,dynv6.net,NXDOMAIN,ok,2024-10-24 14:27:06,"[""ok https://icann.org/epp#ok""]",invalid,FAIL_2Y
+co.krd,co.krd,NXDOMAIN,ok,2024-09-23 06:25:55,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
+dynv6.net,dynv6.net,NXDOMAIN,ok,2024-10-24 14:27:06,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 herokussl.com,herokussl.com,NXDOMAIN,ok,2025-07-12 22:11:19,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 now-dns.top,now-dns.top,NXDOMAIN,ok,2024-10-16 06:25:09,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""serverHold https://icann.org/epp#serverHold""]",valid,FAIL_2Y
-test.ru,test.ru,NXDOMAIN,ok,2024-12-14 21:00:00,"[""REGISTERED, NOT DELEGATED, VERIFIED""]",valid,FAIL_2Y
-wedeploy.me,wedeploy.me,NXDOMAIN,ok,2024-06-18 10:57:30,"[""redemptionPeriod https://icann.org/epp#redemptionPeriod""]",valid,FAIL_2Y
+test.ru,test.ru,NXDOMAIN,ok,2024-12-14 21:00:00,"[""REGISTERED, NOT DELEGATED, VERIFIED""]",invalid,FAIL_2Y
