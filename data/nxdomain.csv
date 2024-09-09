@@ -1,10 +1,12 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_status,psl_txt_status,expiry_check_status
-001www.com,001www.com,NXDOMAIN,ok,2024-10-08 18:59:52,"[""clientHold https://icann.org/epp#clientHold"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-blogspot.cf,blogspot.cf,INCONSISTENT,ok,,null,valid,FAIL_2Y
-blogspot.mr,blogspot.mr,NXDOMAIN,ok,,null,valid,FAIL_2Y
-co.krd,co.krd,NXDOMAIN,ok,2024-09-23 06:25:55,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
-dynv6.net,dynv6.net,NXDOMAIN,ok,2024-10-24 14:27:06,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
-herokussl.com,herokussl.com,NXDOMAIN,ok,2025-07-12 22:11:19,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
-now-dns.top,now-dns.top,NXDOMAIN,ok,2024-10-16 06:25:09,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""serverHold https://icann.org/epp#serverHold""]",invalid,FAIL_2Y
-test.ru,test.ru,NXDOMAIN,ok,2024-12-14 21:00:00,"[""REGISTERED, NOT DELEGATED, VERIFIED""]",invalid,FAIL_2Y
-unispace.io,unispace.io,NXDOMAIN,ok,2024-08-09 08:21:40,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""redemptionPeriod https://icann.org/epp#redemptionPeriod""]",valid,FAIL_2Y
+001www.com,001www.com,NXDOMAIN,ok,2024-10-08 18:59:52.000,"[""clientHold https://icann.org/epp#clientHold"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+blogspot.co.id,blogspot.co.id,NXDOMAIN,ok,2024-10-31 23:59:59.000,"[""clientTransferProhibited"", ""serverHold"", ""serverTransferProhibited""]",valid,FAIL_2Y
+blogspot.mr,blogspot.mr,NXDOMAIN,ok,,"""No Object Found""",valid,FAIL_2Y
+co.krd,co.krd,NXDOMAIN,ok,2024-09-23 06:25:55.000,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
+dynv6.net,dynv6.net,NXDOMAIN,ok,2024-10-24 14:27:06.000,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
+herokussl.com,herokussl.com,NXDOMAIN,ok,2025-07-12 22:11:19.000,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
+myjino.ru,myjino.ru,INCONSISTENT,ok,2025-10-05 13:13:51.000,"[""REGISTERED, DELEGATED, VERIFIED""]",invalid,FAIL_2Y
+now-dns.top,now-dns.top,NXDOMAIN,ok,2024-10-16 06:25:09.000,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""serverHold https://icann.org/epp#serverHold""]",invalid,FAIL_2Y
+perspecta.cloud,perspecta.cloud,INCONSISTENT,ok,2024-10-01 13:35:34.679,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+test.ru,test.ru,NXDOMAIN,ok,2024-12-14 21:00:00.000,"[""REGISTERED, NOT DELEGATED, VERIFIED""]",valid,FAIL_2Y
+unispace.io,unispace.io,NXDOMAIN,ok,2024-08-09 08:21:40.000,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""redemptionPeriod https://icann.org/epp#redemptionPeriod""]",valid,FAIL_2Y
