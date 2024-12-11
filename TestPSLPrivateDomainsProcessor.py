@@ -69,8 +69,7 @@ class TestPSLPrivateDomainsProcessor(unittest.TestCase):
 
     def test_get_whois_data(self):
         whois_data = get_whois_data("example.com")
-        self.assertEqual("ok", whois_data[2])
-
+        self.assertEqual("ok", whois_data[3])
 
 if __name__ == "__main__":
     unittest.main()
