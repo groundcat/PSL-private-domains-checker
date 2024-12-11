@@ -2,7 +2,7 @@ name: Update Domain Data
 
 on:
   schedule:
-    - cron: '0 0 * * 1'  # Runs at 00:00 UTC every other day
+    - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
   workflow_dispatch:  # Allows manual trigger from GitHub UI
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.12
 
     - name: Install dependencies
       run: |

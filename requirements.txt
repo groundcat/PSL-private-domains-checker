@@ -3,3 +3,5 @@ requests
 whoisdomain
 python-whois
 dnspython
+mysql-connector-python
+python-dotenv
