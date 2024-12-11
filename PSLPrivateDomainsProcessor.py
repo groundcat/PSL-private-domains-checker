@@ -1,132 +1,146 @@
 import datetime
 import json
+import subprocess
 import time
-
-import pandas as pd
 import requests
-import whois as whois_fallback  # python-whois package
-import whoisdomain as whois  # whoisdomain package
+import random
+import pandas as pd
+import whois as whois_fallback
+import whoisdomain as whois
+
+try:
+    from datetime import UTC  # Python 3.9+
+except ImportError:
+    UTC = datetime.timezone.utc  # Python 3.2+
+
+def check_dns_status(domain):
+    """
+    Checks the DNS status of a domain using dig.
+    
+    Args:
+        domain (str): The domain to check
+        
+    Returns:
+        str: The DNS status of the domain ("NXDOMAIN", "ok", or "ERROR")
+    """
+    def make_request():
+        response = make_dns_request(domain, "NS")
+        if response is None:
+            return "ERROR"
+            
+        if response.get("Status") == 3:
+            return "NXDOMAIN"
+        return "ok"
+    
+    for _ in range(3):  # Reduced retries since we're using a more reliable method
+        dns_status = make_request()
+        print(f"Attempt {_ + 1}, DNS Status: {dns_status}")
+        if dns_status != "ERROR":
+            return dns_status
+        time.sleep(1)
+    return "ERROR"
 
 
 def make_dns_request(domain, record_type):
     """
-    Makes DNS requests to both Google and Cloudflare DNS APIs.
-
+    Makes DNS request using dig.
+    
     Args:
-        domain (str): The domain to query.
-        record_type (str): The type of DNS record to query.
-
+        domain (str): The domain to query
+        record_type (str): The type of DNS record to query
+        
     Returns:
-        list: A list containing the JSON responses from Google and Cloudflare.
+        dict: A dictionary containing the parsed DNS response
     """
-    urls = [
-        f"https://dns.google/resolve?name={domain}&type={record_type}",
-        f"https://cloudflare-dns.com/dns-query?name={domain}&type={record_type}"
-    ]
-
-    headers = {
-        "accept": "application/dns-json"
-    }
-
-    responses = []
-    for url in urls:
-        try:
-            response = requests.get(url, headers=headers)
-            if response.status_code == 200:
-                json_response = response.json()
-                # print(f"URL: {url}, Response: {json_response}")
-                responses.append(json_response)
-            else:
-                # print(f"URL: {url}, Status Code: {response.status_code}")
-                responses.append(None)
-        except Exception as e:
-            print(f"URL: {url}, DNS Exception: {e}")
-            responses.append(None)
-
-    return responses
-
-
-def check_dns_status(domain):
-    """
-    Checks the DNS status of a domain using Google and Cloudflare DNS APIs.
-
-    Args:
-        domain (str): The domain to check.
-
-    Returns:
-        str: The DNS status of the domain.
-    """
-
-    def make_request():
-        responses = make_dns_request(domain, "NS")
-        if None in responses:
-            return "ERROR"
-
-        google_status = responses[0].get("Status")
-        cloudflare_status = responses[1].get("Status")
-
-        print(f"Google Status: {google_status}, Cloudflare Status: {cloudflare_status}")
-
-        if google_status == cloudflare_status:
-            if google_status == 3:
-                return "NXDOMAIN"
-            else:
-                return "ok"
-        else:
-            return "INCONSISTENT"
-
-    for _ in range(5):
-        dns_status = make_request()
-        print(f"Attempt {_ + 1}, DNS Status: {dns_status}")
-        if dns_status not in ["ERROR", "INCONSISTENT"]:
-            return dns_status
-        time.sleep(1)
-    return "INCONSISTENT"
+    dns_servers = ['8.8.8.8', '8.8.4.4', '1.1.1.1', '1.0.0.1']
+    selected_dns = random.choice(dns_servers)
+    
+    try:
+        # Use the selected DNS server as the resolver
+        # Add +short to get clean TXT record output
+        cmd = ['dig', f'@{selected_dns}', domain, record_type, '+short']
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=5)
+        
+        print(f"Raw dig output for {domain} {record_type} using DNS server {selected_dns}:")
+        print(result.stdout)
+        
+        if result.returncode != 0:
+            print(f"dig command failed: {result.stderr}")
+            return None
+            
+        # Check for empty response (NXDOMAIN or no records)
+        if not result.stdout.strip():
+            # Run another dig to check if it's NXDOMAIN
+            check_cmd = ['dig', f'@{selected_dns}', domain]
+            check_result = subprocess.run(check_cmd, capture_output=True, text=True, timeout=5)
+            if "status: NXDOMAIN" in check_result.stdout:
+                return {"Status": 3}
+            return {"Answer": []}
+            
+        # Parse the dig output
+        answer = []
+        for line in result.stdout.splitlines():
+            line = line.strip()
+            if line:
+                if record_type == "TXT":
+                    # Remove outer quotes if they exist
+                    if line.startswith('"') and line.endswith('"'):
+                        line = line[1:-1]
+                    answer.append({"data": line})
+                else:
+                    answer.append({"data": line})
+                        
+        return {"Answer": answer}
+        
+    except subprocess.TimeoutExpired:
+        print(f"dig command timed out for {domain}")
+        return None
+    except Exception as e:
+        print(f"Error executing dig command for {domain}: {e}")
+        return None
 
 
 def check_psl_txt_record(domain):
     """
-    Checks the _psl TXT record for a domain using Google and Cloudflare DNS APIs.
-
+    Checks the _psl TXT record for a domain using dig.
+    
     Args:
-        domain (str): The domain to check.
-
+        domain (str): The domain to check
+        
     Returns:
-        str: The _psl TXT record status of the domain.
+        str: The _psl TXT record status of the domain
     """
     # Prepare the domain for the TXT check
     domain = domain.lstrip('*.').lstrip('!').encode('idna').decode('ascii')
-
+    psl_domain = f"_psl.{domain}"
+    
     def make_request():
-        responses = make_dns_request(f"_psl.{domain}", "TXT")
-        if None in responses:
+        response = make_dns_request(psl_domain, "TXT")
+        if response is None:
             return "ERROR"
-
-        google_txt = responses[0].get("Answer", [])
-        cloudflare_txt = responses[1].get("Answer", [])
-
-        google_txt_records = [record.get("data", "") for record in google_txt]
-        cloudflare_txt_records = [record.get("data", "").strip('"') for record in cloudflare_txt]
-
-        print(
-            f"_psl TXT Records (Google): {google_txt_records},  _psl TXT Records (Cloudflare): {cloudflare_txt_records}")
-
-        if google_txt_records == cloudflare_txt_records:
-            for record in google_txt_records:
-                if "github.com/publicsuffix/list/pull/" in record:
-                    return "valid"
+            
+        if response.get("Status") == 3:
+            print(f"NXDOMAIN for {psl_domain}")
             return "invalid"
-        else:
-            return "INCONSISTENT"
-
-    for _ in range(5):
+            
+        txt_records = [record.get("data", "") for record in response.get("Answer", [])]
+        print(f"TXT Records for {psl_domain}: {txt_records}")
+        
+        for record in txt_records:
+            if "github.com/publicsuffix/list/pull/" in record:
+                print(f"Found valid PSL record: {record}")
+                return "valid"
+                
+        print(f"No valid PSL record found in: {txt_records}")
+        return "invalid"
+    
+    for _ in range(3):
         psl_txt_status = make_request()
         print(f"Attempt {_ + 1}, PSL TXT Status: {psl_txt_status}")
-        if psl_txt_status not in ["ERROR", "INCONSISTENT"]:
+        if psl_txt_status != "ERROR":
             return psl_txt_status
         time.sleep(1)
-    return "INCONSISTENT"
-
+    return "ERROR"
 
 def get_whois_data(domain):
     """
@@ -175,7 +189,7 @@ class PSLPrivateDomainsProcessor:
         """
         Initializes the PSLPrivateDomainsProcessor with default values and settings.
         """
-        self.psl_url = "https://raw.githubusercontent.com/publicsuffix/list/master/public_suffix_list.dat"
+        self.psl_url = "https://publicsuffix.org/list/public_suffix_list.dat"
         self.psl_icann_marker = "// ===BEGIN ICANN DOMAINS==="
         self.psl_private_marker = "// ===BEGIN PRIVATE DOMAINS==="
         self.columns = [
@@ -289,6 +303,10 @@ class PSLPrivateDomainsProcessor:
             domains (list): A list of domains to process.
         """
         data = []
+        # Get current date in UTC, time component zeroed out
+        current_date = datetime.datetime.now(UTC).date()
+        expiry_threshold = current_date + datetime.timedelta(days=365 * 2)
+
         for raw_domain, domain in zip(raw_domains, domains):
             whois_domain_status, whois_expiry, whois_registration, whois_status = get_whois_data(domain)
             dns_status = check_dns_status(domain)
@@ -297,19 +315,23 @@ class PSLPrivateDomainsProcessor:
             if whois_status == "ERROR":
                 expiry_check_status = "ERROR"
             else:
-                expiry_check_status = "ok" if whois_expiry and whois_expiry >= (
-                        datetime.datetime.utcnow() + datetime.timedelta(days=365 * 2)) else "FAIL_2Y"
+                # Convert expiry datetime to date only for comparison
+                expiry_date = whois_expiry.date() if whois_expiry else None
+                expiry_check_status = "ok" if expiry_date and expiry_date >= expiry_threshold else "FAIL_2Y"
 
             print(
-                f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}, Registration: {whois_registration}, "
-                f"PSL TXT Status: {psl_txt_status}, Expiry Check: {expiry_check_status}")
+                f"{domain} - DNS Status: {dns_status}, "
+                f"Expiry: {expiry_date if whois_expiry else None}, "
+                f"Registration: {whois_registration.date() if whois_registration else None}, "
+                f"PSL TXT Status: {psl_txt_status}, "
+                f"Expiry Check: {expiry_check_status}")
 
             data.append({
                 "psl_entry": domain,
                 "top_level_domain": domain,
                 "whois_domain_status": json.dumps(whois_domain_status),
-                "whois_domain_expiry_date": whois_expiry,
-                "whois_domain_registration_date": whois_registration,
+                "whois_domain_expiry_date": expiry_date if whois_expiry else None,
+                "whois_domain_registration_date": whois_registration.date() if whois_registration else None,
                 "whois_status": whois_status,
                 "dns_status": dns_status,
                 "psl_txt_status": psl_txt_status,
@@ -332,11 +354,11 @@ class PSLPrivateDomainsProcessor:
         nxdomain_df = self.df[self.df["dns_status"] != "ok"].sort_values(by="psl_entry")
         nxdomain_df.to_csv("data/nxdomain.csv", index=False)
 
-        today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+        current_date = datetime.datetime.now(UTC).date()
         expired_df = self.df[
             self.df["whois_domain_expiry_date"].notnull() &
-            (self.df["whois_domain_expiry_date"].astype(str).str[:10] < today_str)
-            ].sort_values(by="psl_entry")
+            (self.df["whois_domain_expiry_date"] < current_date)
+        ].sort_values(by="psl_entry")
         expired_df.to_csv("data/expired.csv", index=False)
 
     def save_hold_results(self):
