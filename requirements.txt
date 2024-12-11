@@ -2,3 +2,4 @@ pandas
 requests
 whoisdomain
 python-whois
+dnspython

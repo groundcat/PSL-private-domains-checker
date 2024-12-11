@@ -6,41 +6,41 @@ import pandas as pd
 import requests
 import whois as whois_fallback  # python-whois package
 import whoisdomain as whois  # whoisdomain package
+import dns.resolver
 
 
 def make_dns_request(domain, record_type):
     """
-    Makes DNS requests to both Google and Cloudflare DNS APIs.
+    Makes DNS requests to both Google and Cloudflare DNS servers on port 53.
 
     Args:
         domain (str): The domain to query.
         record_type (str): The type of DNS record to query.
 
     Returns:
-        list: A list containing the JSON responses from Google and Cloudflare.
+        list: A list containing the DNS responses from Google and Cloudflare.
     """
-    urls = [
-        f"https://dns.google/resolve?name={domain}&type={record_type}",
-        f"https://cloudflare-dns.com/dns-query?name={domain}&type={record_type}"
-    ]
-
-    headers = {
-        "accept": "application/dns-json"
+    dns_servers = {
+        "google": ["8.8.8.8", "8.8.4.4"],
+        "cloudflare": ["1.1.1.1", "1.0.0.1"]
     }
 
     responses = []
-    for url in urls:
+    for provider, servers in dns_servers.items():
+        resolver = dns.resolver.Resolver()
+        resolver.nameservers = servers
+        resolver.timeout = 2
+        resolver.lifetime = 2
         try:
-            response = requests.get(url, headers=headers)
-            if response.status_code == 200:
-                json_response = response.json()
-                # print(f"URL: {url}, Response: {json_response}")
-                responses.append(json_response)
-            else:
-                # print(f"URL: {url}, Status Code: {response.status_code}")
-                responses.append(None)
-        except Exception as e:
-            print(f"URL: {url}, DNS Exception: {e}")
+            answers = resolver.resolve(domain, record_type)
+            response = [r.to_text() for r in answers]
+            responses.append(response)
+        except dns.resolver.NXDOMAIN:
+            responses.append("NXDOMAIN")
+        except dns.resolver.NoAnswer:
+            responses.append(None)
+        except dns.exception.DNSException as e:
+            print(f"DNS Exception for {provider} DNS: {e}")
             responses.append(None)
 
     return responses
