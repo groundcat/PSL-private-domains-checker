@@ -137,12 +137,13 @@ def get_whois_data(domain):
         domain (str): The domain to query.
 
     Returns:
-        tuple: A tuple containing WHOIS domain status, expiry date, and WHOIS status.
+        tuple: A tuple containing WHOIS domain status, expiry date, registration date, and WHOIS status.
     """
     try:
         d = whois.query(domain)
         whois_domain_status = d.statuses
         whois_expiry = d.expiration_date
+        whois_registration = d.creation_date
         whois_status = "ok"
     except Exception as e:
         print(f"whoisdomain Exception: {e}")
@@ -150,15 +151,19 @@ def get_whois_data(domain):
             w = whois_fallback.whois(domain)
             whois_domain_status = w.status
             whois_expiry = w.expiration_date
+            whois_registration = w.creation_date
             if isinstance(whois_expiry, list):
                 whois_expiry = whois_expiry[0]
+            if isinstance(whois_registration, list):
+                whois_registration = whois_registration[0]
             whois_status = "ok"
         except Exception as fallback_e:
             print(f"python-whois Exception: {fallback_e}")
             whois_domain_status = None
             whois_expiry = None
+            whois_registration = None
             whois_status = "ERROR"
-    return whois_domain_status, whois_expiry, whois_status
+    return whois_domain_status, whois_expiry, whois_registration, whois_status
 
 
 class PSLPrivateDomainsProcessor:
@@ -179,6 +184,7 @@ class PSLPrivateDomainsProcessor:
             "dns_status",
             "whois_status",
             "whois_domain_expiry_date",
+            "whois_domain_registration_date",
             "whois_domain_status",
             "psl_txt_status",
             "expiry_check_status"
@@ -284,7 +290,7 @@ class PSLPrivateDomainsProcessor:
         """
         data = []
         for raw_domain, domain in zip(raw_domains, domains):
-            whois_domain_status, whois_expiry, whois_status = get_whois_data(domain)
+            whois_domain_status, whois_expiry, whois_registration, whois_status = get_whois_data(domain)
             dns_status = check_dns_status(domain)
             psl_txt_status = check_psl_txt_record(raw_domain)
 
@@ -295,7 +301,7 @@ class PSLPrivateDomainsProcessor:
                         datetime.datetime.utcnow() + datetime.timedelta(days=365 * 2)) else "FAIL_2Y"
 
             print(
-                f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}, "
+                f"{domain} - DNS Status: {dns_status}, Expiry: {whois_expiry}, Registration: {whois_registration}, "
                 f"PSL TXT Status: {psl_txt_status}, Expiry Check: {expiry_check_status}")
 
             data.append({
@@ -303,6 +309,7 @@ class PSLPrivateDomainsProcessor:
                 "top_level_domain": domain,
                 "whois_domain_status": json.dumps(whois_domain_status),
                 "whois_domain_expiry_date": whois_expiry,
+                "whois_domain_registration_date": whois_registration,
                 "whois_status": whois_status,
                 "dns_status": dns_status,
                 "psl_txt_status": psl_txt_status,
