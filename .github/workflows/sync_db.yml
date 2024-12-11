@@ -27,7 +27,7 @@ jobs:
         MYSQL_USER: ${{ secrets.MYSQL_USER }}
         MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
         MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
-      run: python import_domains.py
+      run: python DBSyncProcessor.py
 
     - name: Notify on failure
       if: failure()
