@@ -1,3 +1,2 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
 n4t.co,n4t.co,ok,ok,2024-12-11,2015-12-12,"[""autoRenewPeriod https://icann.org/epp#autoRenewPeriod"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-shiftedit.io,shiftedit.io,NXDOMAIN,ok,2024-10-27,2016-10-27,"[""redemptionPeriod https://icann.org/epp#redemptionPeriod""]",valid,FAIL_2Y

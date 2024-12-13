@@ -2,6 +2,6 @@ psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whoi
 001www.com,001www.com,NXDOMAIN,ok,2025-10-08,2010-10-08,"[""clientHold https://icann.org/epp#clientHold"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 cloud-ip.biz,cloud-ip.biz,NXDOMAIN,ok,2027-06-01,2015-06-02,[],valid,ok
 co.krd,co.krd,NXDOMAIN,ok,2025-09-23,2016-09-23,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
-dynv6.net,dynv6.net,NXDOMAIN,ok,2025-10-24,2014-10-24,"[""ok https://icann.org/epp#ok""]",invalid,FAIL_2Y
+dynv6.net,dynv6.net,NXDOMAIN,ok,2025-10-24,2014-10-24,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
+firewalledreplit.co,firewalledreplit.co,ERROR,ok,2025-05-04,2022-05-04,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 now-dns.top,now-dns.top,NXDOMAIN,ok,2025-10-16,2016-10-16,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""serverHold https://icann.org/epp#serverHold""]",invalid,FAIL_2Y
-shiftedit.io,shiftedit.io,NXDOMAIN,ok,2024-10-27,2016-10-27,"[""redemptionPeriod https://icann.org/epp#redemptionPeriod""]",valid,FAIL_2Y
