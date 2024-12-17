@@ -1,3 +1,3 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
 iliadboxos.it,iliadboxos.it,ok,ok,2024-12-14,2020-12-14,"[""ok / autoRenewPeriod""]",valid,FAIL_2Y
-n4t.co,n4t.co,ok,ok,2024-12-11,2015-12-12,"[""autoRenewPeriod https://icann.org/epp#autoRenewPeriod"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
+n4t.co,n4t.co,ok,ok,2024-12-11,2015-12-12,"[""autoRenewPeriod https://icann.org/epp#autoRenewPeriod"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""expired""]",invalid,FAIL_2Y
