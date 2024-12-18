@@ -1,12 +1,15 @@
 import datetime
 import json
-import subprocess
 import time
 import requests
 import random
 import pandas as pd
 import whois as whois_fallback
 import whoisdomain as whois
+import dns.message
+import dns.query
+import dns.rdatatype
+import dns.rdataclass
 
 try:
     from datetime import UTC  # Python 3.9+
@@ -15,7 +18,7 @@ except ImportError:
 
 def check_dns_status(domain):
     """
-    Checks the DNS status of a domain using dig.
+    Checks the DNS status of a domain.
     
     Args:
         domain (str): The domain to check
@@ -40,10 +43,9 @@ def check_dns_status(domain):
         time.sleep(1)
     return "ERROR"
 
-
 def make_dns_request(domain, record_type):
     """
-    Makes DNS request using dig.
+    Makes DNS request.
     
     Args:
         domain (str): The domain to query
@@ -52,48 +54,44 @@ def make_dns_request(domain, record_type):
     Returns:
         dict: A dictionary containing the parsed DNS response
     """
-    dns_servers = ['8.8.8.8', '8.8.4.4', '1.1.1.1', '1.0.0.1']
-    selected_dns = random.choice(dns_servers)
-    
+    dns_servers = [
+        ['8.8.8.8', '8.8.4.4'],
+        ['1.1.1.1', '1.0.0.1'],
+        ['208.67.222.222', '208.67.220.220']
+    ]
+    selected_group = random.choice(dns_servers)
+    selected_dns = random.choice(selected_group)
+    dns_servers.remove(selected_group)
+
     try:
         # Use the selected DNS server as the resolver
-        # Add +short to get clean TXT record output
-        cmd = ['dig', f'@{selected_dns}', domain, record_type, '+short']
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=5)
-        
-        print(f"Raw dig output for {domain} {record_type} using DNS server {selected_dns}:")
-        print(result.stdout)
-        
-        if result.returncode != 0:
-            print(f"dig command failed: {result.stderr}")
-            return None
+        q = dns.message.make_query(dns.name.from_text(domain), dns.rdatatype.from_text(record_type))
+        r = dns.query.udp(q, selected_dns, timeout=5)
+
+        # Parse the response
+        ## Response log
+        print(f"DNS Query for {domain} using {selected_dns} with record type {record_type}: \n\t{r.to_text().replace('\n','\n\t')}")
             
         # Check for empty response (NXDOMAIN or no records)
-        if not result.stdout.strip():
-            # Run another dig to check if it's NXDOMAIN
-            check_cmd = ['dig', f'@{selected_dns}', domain]
-            check_result = subprocess.run(check_cmd, capture_output=True, text=True, timeout=5)
-            if "status: NXDOMAIN" in check_result.stdout:
+        if not r.answer:
+            # Run another query to check if it's for sure NXDOMAIN
+            r = dns.query.udp(q, random.choice(random.choice(dns_servers)), timeout=5)
+            if not r.answer:
                 return {"Status": 3}
-            return {"Answer": []}
             
         # Parse the dig output
         answer = []
-        for line in result.stdout.splitlines():
-            line = line.strip()
-            if line:
-                if record_type == "TXT":
-                    # Remove outer quotes if they exist
-                    if line.startswith('"') and line.endswith('"'):
-                        line = line[1:-1]
-                    answer.append({"data": line})
-                else:
-                    answer.append({"data": line})
+        for record in r.answer:
+            if record.rdtype == dns.rdatatype.TXT:
+                for txt_record in record:
+                    answer.append({"data": txt_record.to_text().strip('"').strip("'")})
+            else:
+                answer.append({"data": record.to_text()})
                         
         return {"Answer": answer}
         
-    except subprocess.TimeoutExpired:
-        print(f"dig command timed out for {domain}")
+    except dns.exception.Timeout:
+        print(f"dns request timed out for {domain}")
         return None
     except Exception as e:
         print(f"Error executing dig command for {domain}: {e}")
@@ -102,7 +100,7 @@ def make_dns_request(domain, record_type):
 
 def check_psl_txt_record(domain):
     """
-    Checks the _psl TXT record for a domain using dig.
+    Checks the _psl TXT record for a domain.
     
     Args:
         domain (str): The domain to check
@@ -136,7 +134,7 @@ def check_psl_txt_record(domain):
     
     for _ in range(3):
         psl_txt_status = make_request()
-        print(f"Attempt {_ + 1}, PSL TXT Status: {psl_txt_status}")
+        print(f"{psl_domain} Attempt {_ + 1}, PSL TXT Status: {psl_txt_status}")
         if psl_txt_status != "ERROR":
             return psl_txt_status
         time.sleep(1)
@@ -261,8 +259,7 @@ class PSLPrivateDomainsProcessor:
         lines = psl_data.splitlines()
         process_icann = False
         process_private = False
-        raw_private_domains = []
-        parsed_private_domains = []
+        private_domains = {}
 
         for line in lines:
             stripped_line = line.strip()
@@ -281,18 +278,14 @@ class PSLPrivateDomainsProcessor:
             if process_icann:
                 self.icann_domains.add(stripped_line)
             elif process_private:
-                raw_private_domains.append(stripped_line)
-                parsed_private_domains.append(stripped_line)
+                private_domains[self.parse_domain(stripped_line)] = stripped_line
 
-        print(f"Private domains to be processed: {len(parsed_private_domains)}\n"
+        print(f"Private domains to be processed: {len(private_domains)}\n"
               f"ICANN domains: {len(self.icann_domains)}")
 
-        parsed_private_domains = [self.parse_domain(domain) for domain in parsed_private_domains]
-        raw_private_domains = list(set(raw_private_domains))
-        parsed_private_domains = list(set(parsed_private_domains))
-        print("Private domains in the publicly registrable name space: ", len(parsed_private_domains))
+        print("Private domains in the publicly registrable name space: ", len(private_domains))
 
-        return raw_private_domains, parsed_private_domains
+        return private_domains.values(), private_domains.keys()
 
     def process_domains(self, raw_domains, domains):
         """
