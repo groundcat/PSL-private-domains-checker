@@ -4,18 +4,21 @@ cloud-ip.biz,cloud-ip.biz,NXDOMAIN,ok,2027-06-01,2015-06-02,[],invalid,ok
 co.krd,co.krd,NXDOMAIN,ok,2025-09-23,2016-09-23,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 dattolocal.com,dattolocal.com,NXDOMAIN,ok,2025-03-09,2018-03-09,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 dattorelay.com,dattorelay.com,NXDOMAIN,ok,2025-12-01,2015-12-01,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
-diskstation.org,diskstation.org,ERROR,ok,2025-10-25,2007-10-25,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+dray-dns.de,dray-dns.de,ERROR,ok,,,"[""connect""]",valid,FAIL_2Y
 dynv6.net,dynv6.net,NXDOMAIN,ok,2025-10-24,2014-10-24,"[""ok https://icann.org/epp#ok""]",invalid,FAIL_2Y
+dynvpn.de,dynvpn.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
 edu.krd,edu.krd,NXDOMAIN,ok,2025-09-23,2016-09-23,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 firewalledreplit.co,firewalledreplit.co,ERROR,ok,2025-05-04,2022-05-04,"[""ok https://icann.org/epp#ok""]",ERROR,FAIL_2Y
+gv.vc,gv.vc,NXDOMAIN,ok,2025-10-07,2013-10-07,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 her.name,her.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 his.name,his.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
-krellian.net,krellian.net,ERROR,ok,2025-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",ERROR,FAIL_2Y
-logoip.com,logoip.com,NXDOMAIN,ok,2025-02-01,2008-02-01,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+krellian.net,krellian.net,ERROR,ok,2025-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 myradweb.net,myradweb.net,NXDOMAIN,ok,2026-12-25,2022-12-25,"[""clientTransferProhibited - http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,ok
+now-dns.org,now-dns.org,ERROR,ok,2025-10-16,2016-10-16,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 nz.basketball,nz.basketball,NXDOMAIN,ok,2028-02-28,2018-02-28,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",invalid,ok
 onporter.run,onporter.run,NXDOMAIN,ok,2025-09-28,2021-09-28,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 party.eus,party.eus,ERROR,ok,2025-03-10,2016-03-10,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",ERROR,FAIL_2Y
 scrysec.com,scrysec.com,NXDOMAIN,ok,2025-08-13,2017-08-13,"""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""",invalid,FAIL_2Y
 sdscloud.pl,sdscloud.pl,NXDOMAIN,ok,2025-10-29,2017-10-29,null,invalid,FAIL_2Y
+sinaapp.com,sinaapp.com,NXDOMAIN,ok,2027-06-29,2009-06-29,"[""ok https://www.icann.org/epp#ok"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,ok
 xmit.co,xmit.co,NXDOMAIN,ok,2026-11-09,2023-11-09,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
