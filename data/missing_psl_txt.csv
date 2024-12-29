@@ -33,7 +33,7 @@ barrell-of-knowledge.info,barrell-of-knowledge.info,ok,ok,2026-01-04,2007-01-04,
 beagleboard.io,beagleboard.io,ok,ok,2027-04-25,2022-04-25,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,ok
 better-than.tv,better-than.tv,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 biz.at,biz.at,ok,ok,,,[],invalid,FAIL_2Y
-biz.ua,biz.ua,ok,ok,2032-04-03,2003-04-02,"[""clientTransferProhibited"", ""linked"", ""ok""]",invalid,ok
+biz.ua,biz.ua,ok,ok,2033-04-03,2003-04-02,"[""clientTransferProhibited"", ""linked"", ""ok""]",invalid,ok
 blogdns.com,blogdns.com,ok,ok,2025-08-09,2003-08-09,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 blogdns.net,blogdns.net,ok,ok,2025-08-09,2003-08-09,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 blogdns.org,blogdns.org,ok,ok,2025-08-09,2003-08-09,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -70,7 +70,7 @@ co.no,co.no,ok,ok,,2001-02-26,[],invalid,FAIL_2Y
 co.pl,co.pl,ok,ok,2026-01-01,1997-10-29,null,invalid,FAIL_2Y
 co.place,co.place,ok,ok,2025-03-10,2016-03-10,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 co.technology,co.technology,ok,ok,2025-03-10,2016-03-10,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
-co.ua,co.ua,ok,ok,2032-02-25,2004-02-25,"[""clientTransferProhibited"", ""linked"", ""ok""]",invalid,ok
+co.ua,co.ua,ok,ok,2033-02-25,2004-02-25,"[""clientTransferProhibited"", ""linked"", ""ok""]",invalid,ok
 codeberg.page,codeberg.page,ok,ok,2030-10-07,2020-10-07,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,ok
 codespot.com,codespot.com,ok,ok,2025-11-19,2002-11-19,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 com.de,com.de,ok,ok,,,"[""connect""]",invalid,FAIL_2Y
@@ -377,6 +377,7 @@ loseyourip.com,loseyourip.com,ok,ok,2028-02-02,2017-02-02,"[""clientDeleteProhib
 ltd.hk,ltd.hk,ok,ok,2033-12-15,2013-12-15,[],invalid,ok
 mazeplay.com,mazeplay.com,ok,ok,2026-04-25,2002-04-25,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 med.pl,med.pl,ok,ok,2030-12-31,1997-05-31,null,invalid,ok
+mein-vigor.de,mein-vigor.de,ok,ok,,,"[""connect""]",invalid,FAIL_2Y
 memset.net,memset.net,ok,ok,2025-08-10,2000-08-10,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 merseine.nu,merseine.nu,ok,ok,2025-12-17,1998-12-17,"[""ok""]",invalid,FAIL_2Y
 mex.com,mex.com,ok,ok,2030-10-26,1995-05-05,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,ok
@@ -384,7 +385,7 @@ mil.ru,mil.ru,ok,ok,2025-07-31,1997-07-10,"[""REGISTERED, DELEGATED, VERIFIED""]
 mine.nu,mine.nu,ok,ok,2025-08-31,1999-08-02,"[""ok""]",invalid,FAIL_2Y
 miniserver.com,miniserver.com,ok,ok,2025-04-02,2002-04-02,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 misconfused.org,misconfused.org,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-mo-siemens.io,mo-siemens.io,ok,ok,2025-01-31,2019-01-31,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
+mo-siemens.io,mo-siemens.io,ok,ok,2026-01-31,2019-01-31,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""renewPeriod https://icann.org/epp#renewPeriod""]",invalid,FAIL_2Y
 moonscale.net,moonscale.net,ok,ok,2025-03-04,2014-03-04,"[""Domain Status:"", ""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 myasustor.com,myasustor.com,ok,ok,2025-06-13,2012-06-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 mydatto.com,mydatto.com,ok,ok,2025-03-21,2018-03-21,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
@@ -392,7 +393,7 @@ myddns.rocks,myddns.rocks,ok,ok,2026-02-02,2017-02-02,"[""clientTransferProhibit
 mydrobo.com,mydrobo.com,ok,ok,2025-07-06,2007-07-06,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 myds.me,myds.me,ok,ok,2025-02-16,2012-02-16,"[""ok https://icann.org/epp#ok""]",invalid,FAIL_2Y
 mypep.link,mypep.link,ok,ok,2026-06-03,2014-06-03,"[""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""clientDeleteProhibited - http://www.icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited - http://www.icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited - http://www.icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited - http://www.icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-mypets.ws,mypets.ws,ok,ok,2025-06-25,2005-06-25,"[""clientDeleteProhibited"", ""clientTransferProhibited"", ""clientUpdateProhibited""]",invalid,FAIL_2Y
+mypets.ws,mypets.ws,ok,ok,2025-06-25,2005-06-25,"[""clientTransferProhibited"", ""clientDeleteProhibited"", ""clientUpdateProhibited""]",invalid,FAIL_2Y
 myphotos.cc,myphotos.cc,ok,ok,2025-05-12,2003-05-12,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 mywire.org,mywire.org,ok,ok,2028-07-23,2016-07-23,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,ok
 neat-url.com,neat-url.com,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -418,7 +419,7 @@ party.eus,party.eus,NXDOMAIN,ok,2025-03-10,2016-03-10,"[""clientDeleteProhibited
 podzone.net,podzone.net,ok,ok,2025-02-16,2005-02-16,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 podzone.org,podzone.org,ok,ok,2025-02-16,2005-02-16,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 poznan.pl,poznan.pl,ok,ok,2025-12-31,1995-01-01,null,invalid,FAIL_2Y
-pp.ua,pp.ua,ok,ok,2033-01-01,2008-01-01,"[""linked"", ""ok""]",invalid,ok
+pp.ua,pp.ua,ok,ok,2034-01-01,2008-01-01,"[""linked"", ""ok""]",invalid,ok
 prgmr.com,prgmr.com,ok,ok,2025-04-26,2001-04-26,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 protonet.io,protonet.io,ok,ok,2025-08-05,2015-08-05,"[""ok https://icann.org/epp#ok""]",invalid,FAIL_2Y
 qa2.com,qa2.com,ok,ok,2030-10-25,2000-10-25,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited""]",invalid,ok
@@ -500,7 +501,6 @@ worse-than.tv,worse-than.tv,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibit
 wpenginepowered.com,wpenginepowered.com,ok,ok,2026-05-22,2020-05-22,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 writesthisblog.com,writesthisblog.com,ok,ok,2026-01-03,2007-01-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 wroc.pl,wroc.pl,ok,ok,2026-12-31,1995-01-11,null,invalid,ok
-xmit.co,xmit.co,NXDOMAIN,ok,2026-11-09,2023-11-09,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 xn--gnstigbestellen-zvb.de,xn--gnstigbestellen-zvb.de,ok,ok,,,"[""connect""]",invalid,FAIL_2Y
 xn--gnstigliefern-wob.de,xn--gnstigliefern-wob.de,ok,ok,,,"[""connect""]",invalid,FAIL_2Y
 yolasite.com,yolasite.com,ok,ok,2025-04-06,2008-04-06,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
