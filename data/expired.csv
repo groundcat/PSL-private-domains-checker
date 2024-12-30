@@ -1,3 +1,2 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
 123homepage.it,123homepage.it,ok,ok,2024-12-21,2010-12-21,"[""ok / autoRenewPeriod""]",valid,FAIL_2Y
-iliadboxos.it,iliadboxos.it,ok,ok,2024-12-14,2020-12-14,"[""ok / autoRenewPeriod""]",valid,FAIL_2Y
