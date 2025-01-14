@@ -1,2 +1,1 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
-static-access.net,static-access.net,ok,ok,2025-01-12,2012-01-12,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
