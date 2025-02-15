@@ -1,1 +1,2 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
+filegear-sg.me,filegear-sg.me,NXDOMAIN,ok,2027-03-08,2024-03-08,"[""clientHold https://icann.org/epp#clientHold"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,ok
