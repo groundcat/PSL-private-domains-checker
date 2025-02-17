@@ -2,4 +2,3 @@ psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whoi
 lib.de.us,lib.de.us,ok,ok,2025-02-04,2003-02-05,"[""autoRenewPeriod https://icann.org/epp#autoRenewPeriod"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",invalid,FAIL_2Y
 router.management,router.management,NXDOMAIN,ok,2024-12-14,2015-12-14,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""redemptionPeriod https://icann.org/epp#redemptionPeriod""]",invalid,FAIL_2Y
 syncloud.it,syncloud.it,ok,ok,2025-02-14,2014-03-26,"[""ok / autoRenewPeriod""]",valid,FAIL_2Y
-vultrobjects.com,vultrobjects.com,ok,ok,2025-02-15,2019-02-15,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
