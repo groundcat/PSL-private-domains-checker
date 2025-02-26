@@ -1,4 +1,5 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
+0am.jp,0am.jp,ERROR,ok,2025-06-30,2009-06-12,"[""Active""]",valid,FAIL_2Y
 aus.basketball,aus.basketball,NXDOMAIN,ok,2029-05-28,2018-05-28,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",invalid,ok
 co.krd,co.krd,NXDOMAIN,ok,2025-09-23,2016-09-23,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 dattolocal.com,dattolocal.com,NXDOMAIN,ok,2025-03-09,2018-03-09,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
@@ -9,12 +10,11 @@ firewalledreplit.co,firewalledreplit.co,ERROR,ok,2026-05-04,2022-05-04,"[""clien
 frusky.de,frusky.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
 her.name,her.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 his.name,his.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
-krellian.net,krellian.net,NXDOMAIN,ok,2025-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
+krellian.net,krellian.net,ERROR,ok,2025-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",ERROR,FAIL_2Y
 myradweb.net,myradweb.net,NXDOMAIN,ok,2026-12-25,2022-12-25,"[""clientTransferProhibited - http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 nz.basketball,nz.basketball,NXDOMAIN,ok,2028-02-28,2018-02-28,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",invalid,ok
 onavstack.net,onavstack.net,NXDOMAIN,ok,2026-01-28,2021-01-28,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 router.management,router.management,NXDOMAIN,ok,2024-12-14,2015-12-14,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""redemptionPeriod https://icann.org/epp#redemptionPeriod""]",invalid,FAIL_2Y
 scrysec.com,scrysec.com,NXDOMAIN,ok,2025-08-13,2017-08-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 sdscloud.pl,sdscloud.pl,NXDOMAIN,ok,2025-10-29,2017-10-29,null,invalid,FAIL_2Y
-us.kg,us.kg,NXDOMAIN,ok,2026-05-09,2023-05-10,[],invalid,FAIL_2Y
 xmit.co,xmit.co,NXDOMAIN,ok,2026-11-09,2023-11-09,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
