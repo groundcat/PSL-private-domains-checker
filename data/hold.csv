@@ -1,2 +1,1 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
-dpdns.org,dpdns.org,NXDOMAIN,ok,2027-03-13,2025-03-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""serverHold https://icann.org/epp#serverHold"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
