@@ -1,7 +1,7 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
 adaptable.app,adaptable.app,NXDOMAIN,ok,2026-05-08,2018-05-08,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 aus.basketball,aus.basketball,NXDOMAIN,ok,2029-05-28,2018-05-28,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",invalid,ok
-cloudns.cc,cloudns.cc,NXDOMAIN,ok,2025-06-02,2015-06-02,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
+cloudns.cc,cloudns.cc,NXDOMAIN,ok,2025-06-02,2015-06-02,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",ERROR,FAIL_2Y
 co.krd,co.krd,NXDOMAIN,ok,2025-09-23,2016-09-23,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 dynv6.net,dynv6.net,NXDOMAIN,ok,2025-10-24,2014-10-24,"[""ok https://icann.org/epp#ok""]",invalid,FAIL_2Y
 edu.krd,edu.krd,NXDOMAIN,ok,2025-09-23,2016-09-23,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
@@ -9,10 +9,7 @@ firewalledreplit.co,firewalledreplit.co,NXDOMAIN,ok,2026-05-04,2022-05-04,"[""cl
 frusky.de,frusky.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
 her.name,her.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 his.name,his.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
-home-webserver.de,home-webserver.de,NXDOMAIN,ok,,,"[""connect""]",valid,FAIL_2Y
-krellian.net,krellian.net,ERROR,ok,2026-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-logoip.com,logoip.com,NXDOMAIN,ok,2026-02-01,2008-02-01,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-myhome-server.de,myhome-server.de,ERROR,ok,,,"[""connect""]",valid,FAIL_2Y
+krellian.net,krellian.net,NXDOMAIN,ok,2026-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",ERROR,FAIL_2Y
 myradweb.net,myradweb.net,NXDOMAIN,ok,2026-12-25,2022-12-25,"[""clientTransferProhibited - http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 nz.basketball,nz.basketball,NXDOMAIN,ok,2028-02-28,2018-02-28,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",invalid,ok
 obl.ong,obl.ong,NXDOMAIN,ok,2026-11-04,2022-11-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
