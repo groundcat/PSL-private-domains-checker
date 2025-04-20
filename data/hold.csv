@@ -1,2 +1,2 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
-cpanel.site,cpanel.site,NXDOMAIN,ok,2027-09-05,2024-09-05,"[""pendingTransfer https://icann.org/epp#pendingTransfer"", ""serverHold https://icann.org/epp#serverHold""]",invalid,ok
+cpanel.site,cpanel.site,NXDOMAIN,ok,2028-09-05,2024-09-05,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverHold https://icann.org/epp#serverHold"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""transferPeriod https://icann.org/epp#transferPeriod""]",invalid,ok
