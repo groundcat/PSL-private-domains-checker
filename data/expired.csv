@@ -1,3 +1,2 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
 12chars.it,12chars.it,ok,ok,2025-05-21,2023-05-21,"[""ok / autoRenewPeriod""]",valid,FAIL_2Y
-appudo.net,appudo.net,ok,ok,2025-05-21,2011-05-21,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
