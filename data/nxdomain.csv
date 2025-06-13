@@ -10,6 +10,7 @@ frusky.de,frusky.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
 her.name,her.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 his.name,his.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 krellian.net,krellian.net,ERROR,ok,2026-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",ERROR,FAIL_2Y
+mydns.bz,mydns.bz,ERROR,ERROR,,,null,valid,ERROR
 myradweb.net,myradweb.net,NXDOMAIN,ok,2026-12-25,2022-12-25,"[""clientTransferProhibited - http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 netfy.app,netfy.app,ERROR,ok,,,null,invalid,FAIL_2Y
 nz.basketball,nz.basketball,NXDOMAIN,ok,2028-02-28,2018-02-28,"[""inactive https://icann.org/epp#inactive"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",invalid,ok

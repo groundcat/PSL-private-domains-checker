@@ -1,3 +1,2 @@
 psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whois_domain_registration_date,whois_domain_status,psl_txt_status,expiry_check_status
 biz.gl,biz.gl,NXDOMAIN,ok,2025-04-15,2019-04-15,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""pendingDelete https://icann.org/epp#pendingDelete"", ""redemptionPeriod https://icann.org/epp#redemptionPeriod"", ""serverHold https://icann.org/epp#serverHold"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",invalid,FAIL_2Y
-iopsys.se,iopsys.se,ok,ok,2025-06-04,2014-06-04,"[""ok""]",valid,FAIL_2Y
