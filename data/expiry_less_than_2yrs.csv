@@ -42,7 +42,7 @@ psl_entry,top_level_domain,dns_status,whois_status,whois_domain_expiry_date,whoi
 611.to,611.to,ok,ok,,,null,valid,FAIL_2Y
 64-b.it,64-b.it,ok,ok,2025-09-17,2023-09-17,"[""ok""]",valid,FAIL_2Y
 abkhazia.su,abkhazia.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
-ac.leg.br,ac.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+ac.leg.br,ac.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 ac.ru,ac.ru,ok,ok,2025-11-30,1996-11-11,"[""REGISTERED, DELEGATED, VERIFIED""]",invalid,FAIL_2Y
 adaptable.app,adaptable.app,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 adimo.co.uk,adimo.co.uk,ok,ok,2025-11-01,2012-11-01,"[""Registered until expiry date.""]",invalid,FAIL_2Y
@@ -70,19 +70,19 @@ akamaiorigin.net,akamaiorigin.net,ok,ok,2026-04-19,2017-04-19,"[""clientDeletePr
 akamaized-staging.net,akamaized-staging.net,ok,ok,2026-03-18,2014-03-18,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 akamaized.net,akamaized.net,ok,ok,2026-03-18,2014-03-18,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 aktyubinsk.su,aktyubinsk.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
-al.leg.br,al.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+al.leg.br,al.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 alces.network,alces.network,ok,ok,2026-12-12,2014-12-12,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 alibabacloudcs.com,alibabacloudcs.com,ok,ok,2026-10-17,2024-10-17,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 alpha-myqnapcloud.com,alpha-myqnapcloud.com,ok,ok,2027-02-23,2013-02-23,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 altervista.org,altervista.org,ok,ok,2026-12-22,2000-12-22,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 alwaysdata.net,alwaysdata.net,ok,ok,2026-06-02,2006-06-02,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-am.leg.br,am.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+am.leg.br,am.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 amazonaws.com,amazonaws.com,ok,ok,2027-01-16,2005-08-18,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 amazonaws.com.cn,amazonaws.com.cn,ok,ok,2026-01-13,2006-01-13,"[""clientTransferProhibited"", ""serverDeleteProhibited"", ""serverTransferProhibited"", ""serverUpdateProhibited""]",invalid,FAIL_2Y
 amazoncognito.com,amazoncognito.com,ok,ok,2025-11-08,2013-11-08,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 amplifyapp.com,amplifyapp.com,ok,ok,2026-04-17,2018-04-17,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientDeleteProhibited https://www.icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""clientUpdateProhibited https://www.icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 angry.jp,angry.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
-ap.leg.br,ap.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+ap.leg.br,ap.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 api.gov.uk,api.gov.uk,ok,ok,,1996-08-01,"""No registration status listed.""",valid,FAIL_2Y
 apigee.io,apigee.io,ok,ok,2026-01-25,2012-01-25,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 appchizi.com,appchizi.com,ok,ok,2026-11-02,2015-11-02,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""clientUpdateProhibited https://www.icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
@@ -118,12 +118,12 @@ azurefd.net,azurefd.net,ok,ok,2026-05-08,2018-05-08,"[""clientDeleteProhibited h
 azurestaticapps.net,azurestaticapps.net,ok,ok,2026-04-08,2020-04-08,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 azurewebsites.net,azurewebsites.net,ok,ok,2026-01-24,2012-01-24,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 b-data.io,b-data.io,ok,ok,2025-10-26,2018-10-26,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-ba.leg.br,ba.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+ba.leg.br,ba.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 babyblue.jp,babyblue.jp,ok,ok,2025-07-31,2002-07-01,"[""Active""]",valid,FAIL_2Y
 babymilk.jp,babymilk.jp,ok,ok,2026-02-28,2002-02-11,"[""Active""]",valid,FAIL_2Y
 backdrop.jp,backdrop.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
 balashov.su,balashov.su,ok,ok,2025-09-30,2000-10-12,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
-balena-devices.com,balena-devices.com,ok,ok,2026-03-09,2018-03-09,"""ok https://icann.org/epp#ok""",valid,FAIL_2Y
+balena-devices.com,balena-devices.com,ok,ok,2026-03-09,2018-03-09,"[""ok https://icann.org/epp#ok"", ""ok http://www.icann.org/epp#ok""]",valid,FAIL_2Y
 bambina.jp,bambina.jp,ok,ok,2025-07-31,2002-07-01,"[""Active""]",valid,FAIL_2Y
 barrel-of-knowledge.info,barrel-of-knowledge.info,ok,ok,2025-09-18,2007-09-18,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 barrell-of-knowledge.info,barrell-of-knowledge.info,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -179,7 +179,7 @@ biz.gl,biz.gl,NXDOMAIN,ok,2025-04-15,2019-04-15,"[""clientTransferProhibited htt
 biz.ng,biz.ng,ok,ok,2026-11-17,2013-04-16,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverRenewProhibited https://icann.org/epp#serverRenewProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",valid,FAIL_2Y
 biz.wf,biz.wf,ok,ok,2026-01-05,2021-01-05,"[""ACTIVE""]",valid,FAIL_2Y
 blackbaudcdn.net,blackbaudcdn.net,ok,ok,2025-10-21,2015-10-21,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-blogdns.com,blogdns.com,ok,ok,2025-08-09,2003-08-09,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
+blogdns.com,blogdns.com,ok,ok,2025-08-09,2003-08-09,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 blogdns.net,blogdns.net,ok,ok,2025-08-09,2003-08-09,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 blogdns.org,blogdns.org,ok,ok,2025-08-09,2003-08-09,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 blogsite.org,blogsite.org,ok,ok,2025-08-13,2003-08-13,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -236,7 +236,7 @@ cdn77-secure.org,cdn77-secure.org,ok,ok,2027-05-28,2015-05-28,"[""clientTransfer
 cdn77-ssl.net,cdn77-ssl.net,ok,ok,2026-01-16,2015-01-16,"[""ok https://icann.org/epp#ok"", ""ok https://www.icann.org/epp#ok""]",valid,FAIL_2Y
 cdn77.net,cdn77.net,ok,ok,2027-02-21,2012-02-21,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 cdn77.org,cdn77.org,ok,ok,2026-03-12,2013-03-12,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
-ce.leg.br,ce.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+ce.leg.br,ce.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 cechire.com,cechire.com,ok,ok,2025-09-17,2007-09-17,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 chambagri.fr,chambagri.fr,ok,ok,2025-06-23,1994-12-31,"[""ACTIVE"", ""active"", ""associated"", ""not identified"", ""ok""]",valid,FAIL_2Y
 channelsdvr.net,channelsdvr.net,ok,ok,2026-07-25,2017-07-25,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
@@ -276,7 +276,7 @@ cloudns.be,cloudns.be,ok,ok,,2016-02-09,"""NOT AVAILABLE""",valid,FAIL_2Y
 cloudns.biz,cloudns.biz,ok,ok,2026-11-26,2010-11-27,[],invalid,FAIL_2Y
 cloudns.cc,cloudns.cc,ok,ok,2026-06-02,2015-06-02,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 cloudns.ch,cloudns.ch,ok,ok,,,null,valid,FAIL_2Y
-cloudns.cl,cloudns.cl,ok,ok,2026-10-11,2019-10-11,[],valid,FAIL_2Y
+cloudns.cl,cloudns.cl,ok,ok,,,null,valid,FAIL_2Y
 cloudns.club,cloudns.club,ok,ok,2026-07-02,2014-07-03,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 cloudns.cx,cloudns.cx,ok,ok,2026-07-13,2016-07-13,"[""active https://icann.org/epp#active""]",valid,FAIL_2Y
 cloudns.eu,cloudns.eu,ok,ok,,,[],valid,FAIL_2Y
@@ -370,9 +370,9 @@ deta.dev,deta.dev,ok,ok,,,null,valid,FAIL_2Y
 dev-myqnapcloud.com,dev-myqnapcloud.com,ok,ok,2026-08-16,2013-08-16,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 developer.app,developer.app,ok,ok,,,null,valid,FAIL_2Y
 development.run,development.run,ok,ok,2025-12-27,2017-12-27,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-df.leg.br,df.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+df.leg.br,df.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 diadem.cloud,diadem.cloud,ok,ok,2026-03-07,2017-03-07,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-digick.jp,digick.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
+digick.jp,digick.jp,ok,ok,,,null,valid,FAIL_2Y
 discordsays.com,discordsays.com,ok,ok,2025-11-20,2020-11-20,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clienttransferprohibited https://icann.org/epp#clienttransferprohibited""]",valid,FAIL_2Y
 discordsez.com,discordsez.com,ok,ok,2026-01-27,2021-01-27,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 discourse.group,discourse.group,ok,ok,2025-12-03,2016-12-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
@@ -451,7 +451,7 @@ dyndns.biz,dyndns.biz,ok,ok,2025-11-18,2001-11-16,[],invalid,FAIL_2Y
 dyndns.info,dyndns.info,ok,ok,2025-09-13,2001-09-13,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 dyndns.org,dyndns.org,ok,ok,2025-11-21,1998-11-22,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 dyndns.tv,dyndns.tv,ok,ok,2025-11-08,2001-11-08,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-dyndns.ws,dyndns.ws,ok,ok,,,null,invalid,FAIL_2Y
+dyndns.ws,dyndns.ws,ok,ok,2025-11-08,2001-11-08,"[""clientDeleteProhibited"", ""clientTransferProhibited"", ""clientUpdateProhibited""]",invalid,FAIL_2Y
 dyndns1.de,dyndns1.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 dynns.com,dynns.com,ok,ok,2027-05-18,2002-05-18,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 dynserv.org,dynserv.org,ok,ok,2025-11-06,2017-11-06,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
@@ -490,7 +490,7 @@ endoftheinternet.org,endoftheinternet.org,ok,ok,2026-03-03,2002-03-03,"[""client
 enscaled.sg,enscaled.sg,ok,ok,2025-09-20,2016-09-20,"""ok https://icann.org/epp#ok""",valid,FAIL_2Y
 enscaled.us,enscaled.us,ok,ok,2026-08-24,2015-08-25,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 enterprisecloud.nu,enterprisecloud.nu,ok,ok,2026-01-06,2012-01-06,"[""ok""]",valid,FAIL_2Y
-es.leg.br,es.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+es.leg.br,es.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 est-a-la-maison.com,est-a-la-maison.com,ok,ok,2025-10-30,2007-10-30,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 est-a-la-masion.com,est-a-la-masion.com,ok,ok,2025-09-17,2007-09-17,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 est-le-patron.com,est-le-patron.com,ok,ok,2025-09-17,2007-09-17,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -502,12 +502,12 @@ evervault.dev,evervault.dev,ok,ok,,,null,valid,FAIL_2Y
 exnet.su,exnet.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
 experts-comptables.fr,experts-comptables.fr,ok,ok,2025-09-09,1994-12-31,"[""ACTIVE"", ""active"", ""associated"", ""not identified"", ""ok""]",valid,FAIL_2Y
 expo.app,expo.app,ok,ok,,,null,valid,FAIL_2Y
-fakefur.jp,fakefur.jp,ok,ok,,,null,valid,FAIL_2Y
+fakefur.jp,fakefur.jp,ok,ok,2026-04-30,2002-04-17,"[""Active""]",valid,FAIL_2Y
 familyds.com,familyds.com,ok,ok,2025-11-04,2011-11-04,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 familyds.net,familyds.net,ok,ok,2025-11-04,2011-11-04,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 familyds.org,familyds.org,ok,ok,2025-11-04,2011-11-04,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 fashionstore.jp,fashionstore.jp,ok,ok,2025-09-30,2013-09-04,"[""Active""]",valid,FAIL_2Y
-fastly-edge.com,fastly-edge.com,ok,ok,2027-01-06,2023-01-06,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
+fastly-edge.com,fastly-edge.com,ok,ok,2027-01-06,2023-01-06,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 fastly-terrarium.com,fastly-terrarium.com,ok,ok,2026-11-01,2018-11-01,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 fastly.net,fastly.net,ok,ok,2027-04-18,2011-04-18,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
 fastlylb.net,fastlylb.net,ok,ok,2026-09-08,2014-09-08,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
@@ -519,7 +519,7 @@ fedorainfracloud.org,fedorainfracloud.org,ok,ok,2026-06-03,2015-06-03,"[""client
 fedorapeople.org,fedorapeople.org,ok,ok,2026-03-01,2007-03-01,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 fedoraproject.org,fedoraproject.org,ok,ok,2025-09-24,2003-09-24,"[""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 feedback.ac,feedback.ac,ok,ok,2026-07-30,2021-07-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-fem.jp,fem.jp,ok,ok,,,null,valid,FAIL_2Y
+fem.jp,fem.jp,ok,ok,2025-10-31,2002-10-07,"[""Active""]",valid,FAIL_2Y
 feste-ip.net,feste-ip.net,ok,ok,2026-01-03,2012-01-03,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 fh-muenster.io,fh-muenster.io,ok,ok,2025-10-26,2020-10-26,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 filegear.me,filegear.me,ok,ok,2026-04-10,2017-04-10,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
@@ -533,11 +533,11 @@ firm.dk,firm.dk,ok,ok,2027-03-31,1997-02-12,"[""Active""]",valid,FAIL_2Y
 fldrv.com,fldrv.com,ok,ok,2025-10-24,2020-10-24,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clienttransferprohibited https://icann.org/epp#clienttransferprohibited""]",valid,FAIL_2Y
 flier.jp,flier.jp,ok,ok,2026-03-31,2006-03-23,"""Active""",valid,FAIL_2Y
 flop.jp,flop.jp,ok,ok,2025-07-31,2004-07-08,"[""Active""]",valid,FAIL_2Y
-floppy.jp,floppy.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
+floppy.jp,floppy.jp,ok,ok,2026-03-31,2006-03-23,"""Active""",valid,FAIL_2Y
 flow.ch,flow.ch,ok,ok,,,null,valid,FAIL_2Y
 flutterflow.app,flutterflow.app,ok,ok,,,null,valid,FAIL_2Y
 fly.dev,fly.dev,ok,ok,,,null,invalid,FAIL_2Y
-fool.jp,fool.jp,ok,ok,,,null,valid,FAIL_2Y
+fool.jp,fool.jp,ok,ok,2025-07-31,2003-07-01,"[""Active""]",valid,FAIL_2Y
 for-better.biz,for-better.biz,ok,ok,2026-01-03,2007-01-04,[],invalid,FAIL_2Y
 for-more.biz,for-more.biz,ok,ok,2026-01-03,2007-01-04,[],invalid,FAIL_2Y
 for-our.info,for-our.info,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -561,7 +561,7 @@ freeddns.us,freeddns.us,ok,ok,2025-11-08,2016-11-09,"[""clientTransferProhibited
 freedesktop.org,freedesktop.org,ok,ok,2025-11-01,1999-11-01,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 freemyip.com,freemyip.com,ok,ok,2025-12-16,2016-12-16,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 freesite.host,freesite.host,ok,ok,2026-10-06,2014-10-06,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-frenchkiss.jp,frenchkiss.jp,ok,ok,2026-01-31,2002-01-28,"[""Active""]",valid,FAIL_2Y
+frenchkiss.jp,frenchkiss.jp,ok,ok,2026-01-31,2002-01-28,"""Active""",valid,FAIL_2Y
 from-ak.com,from-ak.com,ok,ok,2026-01-03,2007-01-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 from-al.com,from-al.com,ok,ok,2026-01-03,2007-01-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 from-ar.com,from-ar.com,ok,ok,2026-01-03,2007-01-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -645,8 +645,8 @@ gitlab.io,gitlab.io,ok,ok,2025-08-22,2012-08-22,"[""clientTransferProhibited htt
 gitpage.si,gitpage.si,ok,ok,2026-04-10,2020-04-10,"[""ok""]",valid,FAIL_2Y
 glitch.me,glitch.me,ok,ok,2025-07-18,2008-07-18,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 gliwice.pl,gliwice.pl,ok,ok,2025-12-31,1995-01-01,null,invalid,FAIL_2Y
-gloomy.jp,gloomy.jp,ok,ok,,,null,valid,FAIL_2Y
-go.leg.br,go.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+gloomy.jp,gloomy.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
+go.leg.br,go.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 goip.de,goip.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 gonna.jp,gonna.jp,ok,ok,,,null,valid,FAIL_2Y
 googleapis.com,googleapis.com,ok,ok,2026-01-25,2005-01-25,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
@@ -667,7 +667,7 @@ groks-this.info,groks-this.info,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProh
 grozny.ru,grozny.ru,ok,ok,2025-10-31,1997-10-08,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
 grozny.su,grozny.su,ok,ok,2025-09-30,1999-10-26,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
 gv.vc,gv.vc,ok,ok,2025-10-07,2013-10-07,"""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""",valid,FAIL_2Y
-hacca.jp,hacca.jp,ok,ok,2025-09-30,2001-09-28,"""Active""",valid,FAIL_2Y
+hacca.jp,hacca.jp,ok,ok,,,null,valid,FAIL_2Y
 half.host,half.host,ok,ok,2026-04-13,2016-04-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 halfmoon.jp,halfmoon.jp,ok,ok,2025-06-30,2004-06-28,"[""Active""]",valid,FAIL_2Y
 ham-radio-op.net,ham-radio-op.net,ok,ok,2026-01-09,2005-01-09,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -681,25 +681,25 @@ hatenablog.jp,hatenablog.jp,ok,ok,2025-10-31,2011-10-17,"[""Active""]",valid,FAI
 hatenadiary.com,hatenadiary.com,ok,ok,2026-11-04,2011-11-04,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 hatenadiary.jp,hatenadiary.jp,ok,ok,2025-11-30,2011-11-04,"[""Active""]",valid,FAIL_2Y
 hatenadiary.org,hatenadiary.org,ok,ok,2026-11-14,2018-11-14,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
-heavy.jp,heavy.jp,ok,ok,,,null,valid,FAIL_2Y
+heavy.jp,heavy.jp,ok,ok,2025-09-30,2003-09-05,"""Active""",valid,FAIL_2Y
 heliohost.us,heliohost.us,ok,ok,2026-10-20,2020-10-20,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 hepforge.org,hepforge.org,ok,ok,2026-06-01,2006-06-01,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-her.jp,her.jp,ok,ok,2026-05-31,2003-05-06,"[""Active""]",valid,FAIL_2Y
+her.jp,her.jp,ok,ok,2026-05-31,2003-05-06,"""Active""",valid,FAIL_2Y
 her.name,her.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 here-for-more.info,here-for-more.info,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 herokuapp.com,herokuapp.com,ok,ok,2025-09-19,2010-09-19,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-heteml.net,heteml.net,ok,ok,2025-09-08,2005-09-08,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+heteml.net,heteml.net,ok,ok,2025-09-08,2005-09-08,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 heyflow.page,heyflow.page,ok,ok,,,null,valid,FAIL_2Y
 heyflow.site,heyflow.site,ok,ok,2027-04-26,2021-04-26,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 hicam.net,hicam.net,ok,ok,2025-11-15,2015-11-15,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-hiho.jp,hiho.jp,ok,ok,,,null,valid,FAIL_2Y
-hippy.jp,hippy.jp,ok,ok,,,null,valid,FAIL_2Y
+hiho.jp,hiho.jp,ok,ok,2025-07-31,2003-07-01,"[""Active""]",valid,FAIL_2Y
+hippy.jp,hippy.jp,ok,ok,2025-09-30,2001-09-28,"[""Active""]",valid,FAIL_2Y
 his.name,his.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 hk.org,hk.org,ok,ok,2026-10-20,1996-10-21,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 hlx.page,hlx.page,ok,ok,,,null,valid,FAIL_2Y
 hobby-site.com,hobby-site.com,ok,ok,2026-06-25,2005-06-25,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 hobby-site.org,hobby-site.org,ok,ok,2026-06-25,2005-06-25,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-holy.jp,holy.jp,ok,ok,,,null,valid,FAIL_2Y
+holy.jp,holy.jp,ok,ok,2026-05-31,2003-05-06,"[""Active""]",valid,FAIL_2Y
 home-webserver.de,home-webserver.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 homedns.org,homedns.org,ok,ok,2025-12-03,2001-12-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 homeftp.net,homeftp.net,ok,ok,2025-12-03,2001-12-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -732,7 +732,7 @@ hzc.io,hzc.io,ok,ok,2025-06-17,2020-06-17,"[""ok https://icann.org/epp#ok""]",in
 i234.me,i234.me,ok,ok,2026-02-10,2012-02-10,"[""ok https://icann.org/epp#ok""]",invalid,FAIL_2Y
 iamallama.com,iamallama.com,ok,ok,2026-01-03,2007-01-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 ibxos.it,ibxos.it,ok,ok,2026-03-29,2021-03-29,"[""ok""]",valid,FAIL_2Y
-icurus.jp,icurus.jp,ok,ok,2025-11-30,2005-11-12,"""Active""",valid,FAIL_2Y
+icurus.jp,icurus.jp,ok,ok,2025-11-30,2005-11-12,"[""Active""]",valid,FAIL_2Y
 id.pub,id.pub,ok,ok,2027-06-05,2021-06-05,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 ik-server.com,ik-server.com,ok,ok,2026-05-07,2018-05-07,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 iliadboxos.it,iliadboxos.it,ok,ok,2025-12-14,2020-12-14,"[""ok""]",valid,FAIL_2Y
@@ -866,7 +866,7 @@ jele.club,jele.club,ok,ok,2025-11-11,2018-11-11,"[""clientDeleteProhibited https
 jele.host,jele.host,ok,ok,2026-03-07,2019-03-07,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 jele.io,jele.io,ok,ok,2025-11-11,2018-11-11,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 jele.site,jele.site,ok,ok,2026-03-07,2019-03-07,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-jellybean.jp,jellybean.jp,ok,ok,,,null,valid,FAIL_2Y
+jellybean.jp,jellybean.jp,ok,ok,2026-01-31,2002-01-28,"[""Active""]",valid,FAIL_2Y
 jenv-aruba.cloud,jenv-aruba.cloud,ok,ok,2026-05-31,2019-05-31,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 jotelulu.cloud,jotelulu.cloud,ok,ok,2026-06-08,2017-06-08,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 jouwweb.site,jouwweb.site,ok,ok,2026-07-15,2015-07-15,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
@@ -891,9 +891,9 @@ khakassia.su,khakassia.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED"
 khplay.nl,khplay.nl,ok,ok,,2015-09-05,"[""active""]",valid,FAIL_2Y
 kicks-ass.net,kicks-ass.net,ok,ok,2025-12-04,2001-12-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 kicks-ass.org,kicks-ass.org,ok,ok,2025-12-04,2001-12-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-kikirara.jp,kikirara.jp,ok,ok,2025-09-30,2001-09-28,"""Active""",valid,FAIL_2Y
+kikirara.jp,kikirara.jp,ok,ok,2025-09-30,2001-09-28,"[""Active""]",valid,FAIL_2Y
 kill.jp,kill.jp,ok,ok,2026-05-31,2003-05-06,"[""Active""]",valid,FAIL_2Y
-kilo.jp,kilo.jp,ok,ok,2026-03-31,2006-03-23,"""Active""",valid,FAIL_2Y
+kilo.jp,kilo.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
 kin.one,kin.one,ok,ok,2027-02-27,2022-02-27,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 kin.pub,kin.pub,ok,ok,2027-02-27,2022-02-27,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 knightpoint.systems,knightpoint.systems,ok,ok,2025-10-04,2016-10-04,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
@@ -904,7 +904,7 @@ kozow.com,kozow.com,ok,ok,2026-10-25,2015-10-25,"[""clientDeleteProhibited https
 krakow.pl,krakow.pl,ok,ok,2026-12-31,2001-01-01,null,invalid,FAIL_2Y
 krasnik.pl,krasnik.pl,ok,ok,2025-07-29,1997-01-21,null,valid,FAIL_2Y
 krasnodar.su,krasnodar.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
-krellian.net,krellian.net,ERROR,ok,2026-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",ERROR,FAIL_2Y
+krellian.net,krellian.net,NXDOMAIN,ok,2026-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 kuleuven.be,kuleuven.be,ok,ok,,2000-08-22,"""NOT AVAILABLE""",valid,FAIL_2Y
 kuleuven.cloud,kuleuven.cloud,ok,ok,2026-02-17,2020-02-17,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 kurgan.su,kurgan.su,ok,ok,2025-09-30,2001-09-27,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
@@ -934,7 +934,7 @@ lima.zone,lima.zone,ok,ok,2025-09-11,2014-09-11,"[""ok https://icann.org/epp#ok"
 linkyard-cloud.ch,linkyard-cloud.ch,ok,ok,,,null,valid,FAIL_2Y
 linode.com,linode.com,ok,ok,2027-01-26,2003-01-26,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
 linodeusercontent.com,linodeusercontent.com,ok,ok,2026-12-18,2019-12-18,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
-littlestar.jp,littlestar.jp,ok,ok,2026-02-28,2002-02-11,"""Active""",valid,FAIL_2Y
+littlestar.jp,littlestar.jp,ok,ok,2026-02-28,2002-02-11,"[""Active""]",valid,FAIL_2Y
 live-on.net,live-on.net,ok,ok,2026-09-28,2000-09-28,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 lk3.ru,lk3.ru,ok,ok,2026-07-13,2016-07-13,"[""REGISTERED, DELEGATED, VERIFIED""]",invalid,FAIL_2Y
 localcert.dev,localcert.dev,ok,ok,,,null,valid,FAIL_2Y
@@ -948,11 +948,11 @@ loginline.services,loginline.services,ok,ok,2026-03-23,2019-03-23,"[""clientTran
 loginline.site,loginline.site,ok,ok,2026-03-11,2019-03-11,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 loginto.me,loginto.me,ok,ok,2025-07-18,2008-07-18,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 logoip.com,logoip.com,ok,ok,2026-02-01,2008-02-01,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-logoip.de,logoip.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
+logoip.de,logoip.de,NXDOMAIN,ok,,,"[""connect""]",valid,FAIL_2Y
 lolipop.io,lolipop.io,ok,ok,2026-05-25,2017-05-25,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 lolipopmc.jp,lolipopmc.jp,ok,ok,2026-04-30,2022-04-19,"[""Active""]",valid,FAIL_2Y
 lolitapunk.jp,lolitapunk.jp,ok,ok,2025-09-30,2001-09-21,"[""Active""]",valid,FAIL_2Y
-lomo.jp,lomo.jp,ok,ok,2026-05-31,2002-05-13,"""Active""",valid,FAIL_2Y
+lomo.jp,lomo.jp,ok,ok,2026-05-31,2002-05-13,"[""Active""]",valid,FAIL_2Y
 lovable.app,lovable.app,ok,ok,,,null,valid,FAIL_2Y
 lovepop.jp,lovepop.jp,ok,ok,2026-05-31,2004-05-27,"[""Active""]",valid,FAIL_2Y
 lovesick.jp,lovesick.jp,ok,ok,2025-09-30,2003-09-05,"[""Active""]",valid,FAIL_2Y
@@ -964,7 +964,7 @@ lublin.pl,lublin.pl,ok,ok,2025-07-29,1995-01-01,null,valid,FAIL_2Y
 lug.org.uk,lug.org.uk,ok,ok,2026-06-16,1998-06-16,"[""Registered until expiry date.""]",valid,FAIL_2Y
 lugs.org.uk,lugs.org.uk,ok,ok,2026-09-04,2000-09-04,"[""Registered until expiry date.""]",valid,FAIL_2Y
 luyani.app,luyani.app,ok,ok,,,null,valid,FAIL_2Y
-ma.leg.br,ma.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+ma.leg.br,ma.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 madethis.site,madethis.site,ok,ok,2026-05-17,2024-05-17,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 magentosite.cloud,magentosite.cloud,ok,ok,2026-03-01,2016-03-01,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 mail-box.ne.jp,mail-box.ne.jp,ok,ok,,2004-07-06,"[""Connected (2025/07/31)""]",valid,FAIL_2Y
@@ -986,7 +986,7 @@ memset.net,memset.net,ok,ok,2025-08-10,2000-08-10,"[""clientTransferProhibited h
 merseine.nu,merseine.nu,ok,ok,2025-12-17,1998-12-17,"[""ok""]",invalid,FAIL_2Y
 messerli.app,messerli.app,ok,ok,,,null,valid,FAIL_2Y
 meteorapp.com,meteorapp.com,ok,ok,2026-01-09,2011-01-09,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
-mg.leg.br,mg.leg.br,ok,ok,,2011-08-02,"[""20250612 DSOK"", ""published""]",valid,FAIL_2Y
+mg.leg.br,mg.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 migration.run,migration.run,ok,ok,2026-01-07,2021-01-07,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 mil.ru,mil.ru,ok,ok,2025-07-31,1997-07-10,"[""REGISTERED, DELEGATED, VERIFIED""]",invalid,FAIL_2Y
 mimoza.jp,mimoza.jp,ok,ok,2025-09-30,2005-09-27,"[""Active""]",valid,FAIL_2Y
@@ -1006,15 +1006,15 @@ modx.dev,modx.dev,ok,ok,,,null,valid,FAIL_2Y
 mokuren.ne.jp,mokuren.ne.jp,ok,ok,,2004-07-12,"[""Connected (2025/07/31)""]",valid,FAIL_2Y
 mond.jp,mond.jp,ok,ok,2025-07-31,2003-07-01,"[""Active""]",valid,FAIL_2Y
 mongolian.jp,mongolian.jp,ok,ok,2025-11-30,2005-11-12,"[""Active""]",valid,FAIL_2Y
-moo.jp,moo.jp,ok,ok,2026-05-31,2004-05-12,"""Active""",valid,FAIL_2Y
+moo.jp,moo.jp,ok,ok,2026-05-31,2004-05-12,"[""Active""]",valid,FAIL_2Y
 moonscale.io,moonscale.io,ok,ok,2026-03-04,2014-03-04,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-moonscale.net,moonscale.net,ok,ok,2026-03-04,2014-03-04,"""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""",invalid,FAIL_2Y
+moonscale.net,moonscale.net,ok,ok,2026-03-04,2014-03-04,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 mordovia.ru,mordovia.ru,ok,ok,2025-10-31,1997-10-08,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
 mordovia.su,mordovia.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
-ms.leg.br,ms.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+ms.leg.br,ms.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 msk.ru,msk.ru,ok,ok,2025-07-31,1998-07-21,"""REGISTERED, DELEGATED, VERIFIED""",valid,FAIL_2Y
 msk.su,msk.su,ok,ok,2025-09-30,2000-10-05,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
-mt.leg.br,mt.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+mt.leg.br,mt.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 muni.cz,muni.cz,ok,ok,2025-10-27,1995-08-25,[],valid,FAIL_2Y
 murmansk.su,murmansk.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
 musician.io,musician.io,ok,ok,2026-01-31,2018-01-31,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
@@ -1029,7 +1029,7 @@ myaddr.dev,myaddr.dev,ok,ok,,,null,valid,FAIL_2Y
 myasustor.com,myasustor.com,ok,ok,2026-06-13,2012-06-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 mydatto.com,mydatto.com,ok,ok,2026-03-21,2018-03-21,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 mydatto.net,mydatto.net,ok,ok,2026-03-09,2018-03-09,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-mydbserver.com,mydbserver.com,ok,ok,2027-02-13,2008-02-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+mydbserver.com,mydbserver.com,ok,ok,2027-02-13,2008-02-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 mydns.jp,mydns.jp,ok,ok,2026-05-31,2009-05-18,"[""Active""]",valid,FAIL_2Y
 mydns.tw,mydns.tw,ok,ok,2026-07-07,2009-07-07,"[""ok""]",valid,FAIL_2Y
 mydns.vc,mydns.vc,ok,ok,2026-06-26,2009-06-26,"[""ok https://icann.org/epp#ok"", ""ACTIVE""]",valid,FAIL_2Y
@@ -1048,13 +1048,13 @@ myiphost.com,myiphost.com,ok,ok,2025-10-07,2015-10-07,"[""clientTransferProhibit
 myjino.ru,myjino.ru,ok,ok,2025-10-05,2011-10-05,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
 mynetname.net,mynetname.net,ok,ok,2027-04-29,2014-04-29,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 mypep.link,mypep.link,ok,ok,2026-06-03,2014-06-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-mypets.ws,mypets.ws,ok,ok,2026-06-25,2005-06-25,"[""clientDeleteProhibited"", ""clientTransferProhibited"", ""clientUpdateProhibited""]",invalid,FAIL_2Y
-myphotos.cc,myphotos.cc,ok,ok,2026-05-12,2003-05-12,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
+mypets.ws,mypets.ws,ok,ok,2026-06-25,2005-06-25,"[""clientTransferProhibited"", ""clientDeleteProhibited"", ""clientUpdateProhibited""]",invalid,FAIL_2Y
+myphotos.cc,myphotos.cc,ok,ok,2026-05-12,2003-05-12,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 mypi.co,mypi.co,ok,ok,2025-09-29,2015-09-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 myqnapcloud.cn,myqnapcloud.cn,ok,ok,2026-07-10,2013-07-10,"[""ok""]",valid,FAIL_2Y
 myqnapcloud.com,myqnapcloud.com,ok,ok,2027-01-24,2013-01-24,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 myradweb.net,myradweb.net,NXDOMAIN,ok,2026-12-25,2022-12-25,"[""clientTransferProhibited - http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-mysecuritycamera.net,mysecuritycamera.net,ok,ok,2027-02-18,2005-02-18,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+mysecuritycamera.net,mysecuritycamera.net,ok,ok,2027-02-18,2005-02-18,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 mysecuritycamera.org,mysecuritycamera.org,ok,ok,2026-12-23,2005-12-23,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 myshopblocks.com,myshopblocks.com,ok,ok,2026-09-23,2015-09-23,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 myshopify.com,myshopify.com,ok,ok,2026-03-03,2006-03-03,"[""clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited""]",valid,FAIL_2Y
@@ -1085,15 +1085,15 @@ na4u.ru,na4u.ru,ok,ok,2026-07-04,2018-07-04,"[""REGISTERED, DELEGATED, VERIFIED"
 nabu.casa,nabu.casa,ok,ok,2026-07-06,2018-07-06,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 nalchik.ru,nalchik.ru,ok,ok,2025-10-31,1997-10-08,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
 nalchik.su,nalchik.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
-namaste.jp,namaste.jp,ok,ok,,,null,valid,FAIL_2Y
+namaste.jp,namaste.jp,ok,ok,2025-11-30,2005-11-12,"[""Active""]",valid,FAIL_2Y
 name.pm,name.pm,ok,ok,2026-01-29,2021-01-29,"[""ACTIVE"", ""active"", ""associated"", ""not identified""]",valid,FAIL_2Y
 navoi.su,navoi.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
 neat-url.com,neat-url.com,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 neen.it,neen.it,ok,ok,2026-03-23,2005-03-24,"[""ok""]",valid,FAIL_2Y
 net-freaks.com,net-freaks.com,ok,ok,2026-09-28,2002-09-28,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 net.ru,net.ru,ok,ok,2026-07-31,1997-07-10,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
-netfy.app,netfy.app,ERROR,ok,,,null,invalid,FAIL_2Y
-netgamers.jp,netgamers.jp,ok,ok,2025-07-31,2002-07-01,"[""Active""]",valid,FAIL_2Y
+netfy.app,netfy.app,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
+netgamers.jp,netgamers.jp,ok,ok,,,null,valid,FAIL_2Y
 netlify.app,netlify.app,ok,ok,,,null,valid,FAIL_2Y
 nflfan.org,nflfan.org,ok,ok,2026-09-10,2009-09-10,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 nfshost.com,nfshost.com,ok,ok,2026-03-27,2003-01-04,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
@@ -1105,13 +1105,13 @@ ngrok.io,ngrok.io,ok,ok,2027-05-25,2014-05-25,"[""ok https://icann.org/epp#ok""]
 ngrok.pizza,ngrok.pizza,ok,ok,2026-07-21,2022-07-21,"[""renewPeriod https://icann.org/epp#renewPeriod""]",valid,FAIL_2Y
 ngrok.pro,ngrok.pro,ok,ok,2026-07-20,2022-07-20,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 nh-serv.co.uk,nh-serv.co.uk,ok,ok,2027-06-02,2011-06-02,"[""Registered until expiry date.""]",valid,FAIL_2Y
-nikita.jp,nikita.jp,ok,ok,2025-12-31,2002-12-20,"""Active""",valid,FAIL_2Y
+nikita.jp,nikita.jp,ok,ok,2025-12-31,2002-12-20,"[""Active""]",valid,FAIL_2Y
 nimsite.uk,nimsite.uk,ok,ok,2027-01-19,2023-01-19,"[""Registered until expiry date.""]",valid,FAIL_2Y
 no-ip.biz,no-ip.biz,ok,ok,2026-11-21,2001-11-22,[],valid,FAIL_2Y
 no-ip.ca,no-ip.ca,ok,ok,2026-01-12,2002-01-12,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 no-ip.co.uk,no-ip.co.uk,ok,ok,2026-11-10,2002-11-10,"[""Registered until expiry date.""]",valid,FAIL_2Y
 no-ip.info,no-ip.info,ok,ok,2026-11-22,2001-11-22,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-no-ip.net,no-ip.net,ok,ok,2026-11-27,2002-11-27,"[""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+no-ip.net,no-ip.net,ok,ok,2026-11-27,2002-11-27,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 no-ip.org,no-ip.org,ok,ok,2026-11-22,2001-11-22,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 nobushi.jp,nobushi.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
 nodeart.io,nodeart.io,ok,ok,2026-06-19,2015-06-19,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
@@ -1184,7 +1184,7 @@ owo.codes,owo.codes,ok,ok,2025-07-29,2017-07-29,"[""clientDeleteProhibited https
 ox.rs,ox.rs,ok,ok,2026-03-11,2013-03-11,"[""Active https://www.rnids.rs/en/domain-name-status-codes#Active""]",invalid,FAIL_2Y
 oy.lc,oy.lc,ok,ok,,,null,valid,FAIL_2Y
 oya.to,oya.to,ok,ok,,,null,valid,FAIL_2Y
-pa.leg.br,pa.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+pa.leg.br,pa.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 pabianice.pl,pabianice.pl,ok,ok,2026-12-31,1997-10-03,null,valid,FAIL_2Y
 pages.dev,pages.dev,ok,ok,,,null,valid,FAIL_2Y
 pagespeedmobilizer.com,pagespeedmobilizer.com,ok,ok,2025-12-12,2014-12-12,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -1193,27 +1193,27 @@ panel.dev,panel.dev,ok,ok,,,null,valid,FAIL_2Y
 panel.gg,panel.gg,ok,ok,,2019-06-05,"[""Active""]",valid,FAIL_2Y
 pantheonsite.io,pantheonsite.io,ok,ok,2026-01-29,2016-01-29,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 parallel.jp,parallel.jp,ok,ok,2025-11-30,2005-11-12,"[""Active""]",valid,FAIL_2Y
-parasite.jp,parasite.jp,ok,ok,,,null,valid,FAIL_2Y
+parasite.jp,parasite.jp,ok,ok,2025-11-30,2005-11-12,"""Active""",valid,FAIL_2Y
 party.eus,party.eus,ok,ok,2026-03-10,2016-03-10,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 paynow.cx,paynow.cx,ok,ok,2026-07-30,2021-07-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 paywhirl.com,paywhirl.com,ok,ok,2025-08-01,2013-08-01,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
-pb.leg.br,pb.leg.br,ok,ok,,2011-08-15,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+pb.leg.br,pb.leg.br,ok,ok,,2011-08-15,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 pdns.page,pdns.page,ok,ok,,,null,valid,FAIL_2Y
-pe.leg.br,pe.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
-pecori.jp,pecori.jp,ok,ok,,,null,valid,FAIL_2Y
+pe.leg.br,pe.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
+pecori.jp,pecori.jp,ok,ok,2025-11-30,2005-11-12,"""Active""",valid,FAIL_2Y
 peewee.jp,peewee.jp,ok,ok,2025-09-30,2001-09-21,"[""Active""]",valid,FAIL_2Y
-penne.jp,penne.jp,ok,ok,2025-11-30,2005-11-12,"[""Active""]",valid,FAIL_2Y
+penne.jp,penne.jp,ok,ok,2025-11-30,2005-11-12,"""Active""",valid,FAIL_2Y
 penza.su,penza.su,ok,ok,2025-09-30,1999-06-22,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
-pepper.jp,pepper.jp,ok,ok,2025-07-31,2003-07-01,"""Active""",valid,FAIL_2Y
+pepper.jp,pepper.jp,ok,ok,2025-07-31,2003-07-01,"[""Active""]",valid,FAIL_2Y
 perma.jp,perma.jp,ok,ok,2025-11-30,2005-11-12,"[""Active""]",valid,FAIL_2Y
 perspecta.cloud,perspecta.cloud,ok,ok,2025-10-01,2019-10-01,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 pgfog.com,pgfog.com,ok,ok,2025-09-21,2012-09-21,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clienttransferprohibited https://icann.org/epp#clienttransferprohibited"", ""renewperiod https://icann.org/epp#renewperiod""]",valid,FAIL_2Y
 pgw.jp,pgw.jp,ok,ok,2025-06-30,2009-06-15,"[""Active""]",valid,FAIL_2Y
 pharmacien.fr,pharmacien.fr,ok,ok,2025-12-21,1994-12-31,"[""ACTIVE"", ""active"", ""associated"", ""not identified"", ""ok""]",valid,FAIL_2Y
-pi.leg.br,pi.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
-pigboat.jp,pigboat.jp,ok,ok,2025-11-30,2005-11-12,"[""Active""]",valid,FAIL_2Y
+pi.leg.br,pi.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
+pigboat.jp,pigboat.jp,ok,ok,,,null,valid,FAIL_2Y
 pimienta.org,pimienta.org,ok,ok,2026-01-12,2005-01-12,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-pinoko.jp,pinoko.jp,ok,ok,2026-01-31,2003-01-10,"[""Active""]",valid,FAIL_2Y
+pinoko.jp,pinoko.jp,ok,ok,,,null,valid,FAIL_2Y
 pixolino.com,pixolino.com,ok,ok,2026-04-28,2003-04-28,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 platformsh.site,platformsh.site,ok,ok,2026-06-25,2016-06-25,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 platter-app.dev,platter-app.dev,ok,ok,,,null,valid,FAIL_2Y
@@ -1235,7 +1235,7 @@ postman-echo.com,postman-echo.com,ok,ok,2025-11-16,2016-11-16,"[""clientDeletePr
 potager.org,potager.org,ok,ok,2025-11-06,2006-11-06,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 poznan.pl,poznan.pl,ok,ok,2025-12-31,1995-01-01,null,invalid,FAIL_2Y
 pp.ru,pp.ru,ok,ok,2026-07-31,1997-07-10,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
-pr.leg.br,pr.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+pr.leg.br,pr.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 prequalifyme.today,prequalifyme.today,ok,ok,2025-11-07,2019-11-07,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 prgmr.com,prgmr.com,ok,ok,2026-04-26,2001-04-26,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 primetel.cloud,primetel.cloud,ok,ok,2026-02-03,2017-02-03,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
@@ -1247,8 +1247,8 @@ pstmn.io,pstmn.io,ok,ok,2026-02-02,2016-02-02,"[""clientTransferProhibited https
 public-inquiry.uk,public-inquiry.uk,ok,ok,2026-06-23,2020-06-23,"[""Registered until expiry date.""]",valid,FAIL_2Y
 pubtls.org,pubtls.org,ok,ok,2025-08-07,2018-08-07,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 punyu.jp,punyu.jp,ok,ok,,,null,valid,FAIL_2Y
-pupu.jp,pupu.jp,ok,ok,2025-07-31,2002-07-02,"[""Active""]",valid,FAIL_2Y
-pussycat.jp,pussycat.jp,ok,ok,2025-12-31,2001-12-20,"""Active""",valid,FAIL_2Y
+pupu.jp,pupu.jp,ok,ok,,,null,valid,FAIL_2Y
+pussycat.jp,pussycat.jp,ok,ok,,,null,valid,FAIL_2Y
 pya.jp,pya.jp,ok,ok,,,null,valid,FAIL_2Y
 pyatigorsk.ru,pyatigorsk.ru,ok,ok,2025-10-31,1997-10-08,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
 pymnt.uk,pymnt.uk,ok,ok,2025-08-25,2015-08-25,"[""Registered until expiry date.""]",invalid,FAIL_2Y
@@ -1266,7 +1266,7 @@ rackmaze.net,rackmaze.net,ok,ok,2025-09-28,2011-09-28,"[""clientTransferProhibit
 radio.am,radio.am,ok,ok,2026-01-27,2004-01-27,"[""active, registrar locked""]",valid,FAIL_2Y
 radio.fm,radio.fm,ok,ok,2026-03-28,1999-03-29,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited""]",valid,FAIL_2Y
 raffleentry.org.uk,raffleentry.org.uk,ok,ok,2026-02-02,2011-02-02,"[""Registered until expiry date.""]",valid,FAIL_2Y
-raindrop.jp,raindrop.jp,ok,ok,2025-09-30,2001-09-21,"[""Active""]",valid,FAIL_2Y
+raindrop.jp,raindrop.jp,ok,ok,,,null,valid,FAIL_2Y
 ras.ru,ras.ru,ok,ok,2025-11-30,1996-11-10,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
 ravendb.cloud,ravendb.cloud,ok,ok,2026-01-28,2019-01-28,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 ravendb.community,ravendb.community,ok,ok,2025-12-27,2017-12-27,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
@@ -1274,7 +1274,7 @@ ravendb.run,ravendb.run,ok,ok,2025-12-27,2017-12-27,"[""clientTransferProhibited
 ravpage.co.il,ravpage.co.il,ok,ok,2026-03-30,,"[""Transfer Locked""]",valid,FAIL_2Y
 rdy.jp,rdy.jp,ok,ok,2025-06-30,2004-06-23,"[""Active""]",valid,FAIL_2Y
 readmyblog.org,readmyblog.org,ok,ok,2026-01-03,2007-01-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-readthedocs.io,readthedocs.io,ok,ok,2027-06-14,2014-06-14,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
+readthedocs.io,readthedocs.io,ok,ok,2027-06-14,2014-06-14,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 readymade.jp,readymade.jp,ok,ok,,,null,valid,FAIL_2Y
 realm.cz,realm.cz,ok,ok,2026-04-27,2008-04-27,"[""Sponsoring registrar change forbidden"", ""Update forbidden""]",invalid,FAIL_2Y
 redirectme.net,redirectme.net,ok,ok,2026-08-10,2001-08-10,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
@@ -1286,44 +1286,44 @@ replit.app,replit.app,ok,ok,,,null,valid,FAIL_2Y
 replit.dev,replit.dev,ok,ok,,,null,valid,FAIL_2Y
 repost.aws,repost.aws,ok,ok,,,null,valid,FAIL_2Y
 researched.cx,researched.cx,ok,ok,2026-07-30,2021-07-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-reservd.com,reservd.com,ok,ok,2026-05-06,2005-05-06,"""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""",valid,FAIL_2Y
+reservd.com,reservd.com,ok,ok,2026-05-06,2005-05-06,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 reserve-online.com,reserve-online.com,ok,ok,2025-12-24,2009-12-24,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 reserve-online.net,reserve-online.net,ok,ok,2026-03-17,2008-03-17,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 resindevice.io,resindevice.io,ok,ok,2026-06-05,2015-06-05,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 resinstaging.io,resinstaging.io,ok,ok,2025-12-08,2014-12-08,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 retrosnub.co.uk,retrosnub.co.uk,ok,ok,2026-05-12,2003-05-12,"[""Registered until expiry date.""]",valid,FAIL_2Y
-rgr.jp,rgr.jp,ok,ok,2025-06-30,2004-06-23,"""Active""",valid,FAIL_2Y
+rgr.jp,rgr.jp,ok,ok,,,null,valid,FAIL_2Y
 rhcloud.com,rhcloud.com,ok,ok,2026-01-06,2011-01-06,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientDeleteProhibited https://www.icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""clientUpdateProhibited https://www.icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-rj.leg.br,rj.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
-rn.leg.br,rn.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
-ro.leg.br,ro.leg.br,ok,ok,,2011-08-02,"[""20250612 DSOK"", ""published""]",valid,FAIL_2Y
+rj.leg.br,rj.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
+rn.leg.br,rn.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
+ro.leg.br,ro.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 rocky.page,rocky.page,ok,ok,,,null,valid,FAIL_2Y
 royal-commission.uk,royal-commission.uk,ok,ok,2026-06-23,2020-06-23,"[""Registered until expiry date.""]",valid,FAIL_2Y
-rr.leg.br,rr.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+rr.leg.br,rr.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 rs.ba,rs.ba,ok,ok,,,null,valid,FAIL_2Y
-rs.leg.br,rs.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+rs.leg.br,rs.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 rt.ht,rt.ht,ok,ok,2027-05-10,2022-05-10,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 ru.net,ru.net,ok,ok,2026-02-01,1995-01-31,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 rub.de,rub.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 ruhr-uni-bochum.de,ruhr-uni-bochum.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 rulez.jp,rulez.jp,ok,ok,2025-07-31,2004-07-08,"[""Active""]",valid,FAIL_2Y
 run.app,run.app,ok,ok,,,null,valid,FAIL_2Y
-runcontainers.dev,runcontainers.dev,ERROR,ok,,,null,ERROR,FAIL_2Y
-sadist.jp,sadist.jp,ok,ok,2025-11-30,2005-11-12,"[""Active""]",valid,FAIL_2Y
+runcontainers.dev,runcontainers.dev,ERROR,ok,,,null,invalid,FAIL_2Y
+sadist.jp,sadist.jp,ok,ok,,,null,valid,FAIL_2Y
 sagemaker.aws,sagemaker.aws,ok,ok,,,null,valid,FAIL_2Y
 sagemaker.com.cn,sagemaker.com.cn,ok,ok,2026-03-02,2020-03-02,"[""clientTransferProhibited""]",valid,FAIL_2Y
 sakura.ne.jp,sakura.ne.jp,ok,ok,,2017-07-21,"[""Connected (2025/07/31)""]",valid,FAIL_2Y
 sakura.tv,sakura.tv,ok,ok,2025-09-26,2005-09-26,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-sakurastorage.jp,sakurastorage.jp,ok,ok,2025-11-30,2014-11-18,"[""Active""]",valid,FAIL_2Y
+sakurastorage.jp,sakurastorage.jp,ok,ok,,,null,valid,FAIL_2Y
 sakuratan.com,sakuratan.com,ok,ok,2025-07-12,2004-07-12,"[""clientDeleteProhibited  https://icann.org/epp#clientDeleteProhibited"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited  https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited  https://icann.org/epp#clientUpdateProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 sakuraweb.com,sakuraweb.com,ok,ok,2025-07-09,1997-07-10,"[""clientDeleteProhibited  https://icann.org/epp#clientDeleteProhibited"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited  https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited  https://icann.org/epp#clientUpdateProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 salesforce.com,salesforce.com,ok,ok,2026-10-21,1998-12-02,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
-saloon.jp,saloon.jp,ok,ok,2025-09-30,2005-09-27,"[""Active""]",valid,FAIL_2Y
+saloon.jp,saloon.jp,ok,ok,,,null,valid,FAIL_2Y
 sandcats.io,sandcats.io,ok,ok,2026-10-30,2014-10-30,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 saveincloud.net,saveincloud.net,ok,ok,2027-03-31,2016-03-31,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 saves-the-whales.com,saves-the-whales.com,ok,ok,2026-01-03,2007-01-03,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
-sblo.jp,sblo.jp,ok,ok,2025-06-30,2005-06-28,"[""Active""]",valid,FAIL_2Y
-sc.leg.br,sc.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+sblo.jp,sblo.jp,ok,ok,,,null,valid,FAIL_2Y
+sc.leg.br,sc.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 scaleforce.com.cy,scaleforce.com.cy,ok,ok,,,null,valid,FAIL_2Y
 scaleforce.net,scaleforce.net,ok,ok,2026-12-17,2014-12-17,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientRenewProhibited https://icann.org/epp#clientRenewProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 sch.tf,sch.tf,ok,ok,2025-11-20,2020-11-20,"[""ACTIVE"", ""active"", ""associated"", ""clientDeleteProhibited"", ""clientTransferProhibited"", ""not identified""]",valid,FAIL_2Y
@@ -1338,8 +1338,8 @@ scrapping.cc,scrapping.cc,ok,ok,2026-05-08,2005-05-08,"[""clientDeleteProhibited
 scrysec.com,scrysec.com,NXDOMAIN,ok,2025-08-13,2017-08-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 scw.cloud,scw.cloud,ok,ok,2026-07-17,2018-07-17,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 sdscloud.pl,sdscloud.pl,NXDOMAIN,ok,2025-10-29,2017-10-29,null,invalid,FAIL_2Y
-se.leg.br,se.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
-secret.jp,secret.jp,ok,ok,2026-05-31,2003-05-06,"[""Active""]",valid,FAIL_2Y
+se.leg.br,se.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
+secret.jp,secret.jp,ok,ok,,,null,valid,FAIL_2Y
 securitytactics.com,securitytactics.com,ok,ok,2026-09-27,2002-09-27,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 seidat.net,seidat.net,ok,ok,2027-01-22,2014-01-22,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 selfip.biz,selfip.biz,ok,ok,2026-06-16,2005-06-17,[],invalid,FAIL_2Y
@@ -1396,7 +1396,7 @@ smushcdn.com,smushcdn.com,ok,ok,2026-02-22,2018-02-22,"[""clientDeleteProhibited
 snowflake.app,snowflake.app,ok,ok,,,null,valid,FAIL_2Y
 sochi.su,sochi.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
 soundcast.me,soundcast.me,ok,ok,2025-11-07,2016-11-07,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-sp.leg.br,sp.leg.br,ok,ok,,2011-08-02,"[""20250614 DSOK"", ""published""]",valid,FAIL_2Y
+sp.leg.br,sp.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 space-to-rent.com,space-to-rent.com,ok,ok,2026-01-04,2007-01-04,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 spawn.cc,spawn.cc,ok,ok,2025-11-14,2018-11-14,"""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""",valid,FAIL_2Y
 spb.ru,spb.ru,ok,ok,2026-03-31,1997-03-11,"""REGISTERED, DELEGATED, VERIFIED""",valid,FAIL_2Y
@@ -1436,12 +1436,12 @@ sub.jp,sub.jp,ok,ok,,,null,valid,FAIL_2Y
 subsc-pay.com,subsc-pay.com,ok,ok,2027-05-16,2024-05-16,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 subsc-pay.net,subsc-pay.net,ok,ok,2027-05-16,2024-05-16,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 sumomo.ne.jp,sumomo.ne.jp,ok,ok,,2004-07-12,"[""Connected (2025/07/31)""]",valid,FAIL_2Y
-sunnyday.jp,sunnyday.jp,ok,ok,2026-01-31,2002-01-28,"[""Active""]",valid,FAIL_2Y
+sunnyday.jp,sunnyday.jp,ok,ok,2026-01-31,2002-01-28,"""Active""",valid,FAIL_2Y
 supabase.co,supabase.co,ok,ok,2026-01-11,2020-01-11,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-supabase.in,supabase.in,ok,ok,2026-05-25,2020-05-25,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+supabase.in,supabase.in,ok,ok,2026-05-25,2020-05-25,"""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""",valid,FAIL_2Y
 supabase.net,supabase.net,ok,ok,2026-03-23,2020-03-23,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 supersale.jp,supersale.jp,ok,ok,2026-03-31,2016-03-01,"[""Active""]",valid,FAIL_2Y
-surveys.so,surveys.so,ok,ok,2026-07-30,2021-07-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+surveys.so,surveys.so,ok,ok,,,null,valid,FAIL_2Y
 svn-repos.de,svn-repos.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 sweetpepper.org,sweetpepper.org,ok,ok,2026-05-27,2006-05-27,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 swidnik.pl,swidnik.pl,ok,ok,2025-07-29,1997-02-27,null,valid,FAIL_2Y
@@ -1453,7 +1453,7 @@ synology.me,synology.me,ok,ok,2026-02-10,2012-02-10,"[""clientDeleteProhibited h
 sytes.net,sytes.net,ok,ok,2027-04-22,1999-04-22,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 tabitorder.co.il,tabitorder.co.il,ok,ok,2027-06-08,,"[""Transfer Locked""]",valid,FAIL_2Y
 taifun-dns.de,taifun-dns.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
-tank.jp,tank.jp,ok,ok,2025-07-31,2004-07-09,"[""Active""]",valid,FAIL_2Y
+tank.jp,tank.jp,ok,ok,,,null,valid,FAIL_2Y
 tashkent.su,tashkent.su,ok,ok,2025-09-30,2001-09-29,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
 tawkto.email,tawkto.email,ok,ok,2026-11-23,2023-11-23,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 tb-hosting.com,tb-hosting.com,ok,ok,2025-10-28,2021-10-28,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
@@ -1470,12 +1470,12 @@ termez.su,termez.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",va
 test-iserv.de,test-iserv.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 tests.cx,tests.cx,ok,ok,2026-07-30,2021-07-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 theshop.jp,theshop.jp,ok,ok,2025-09-30,2013-09-04,"[""Active""]",valid,FAIL_2Y
-thick.jp,thick.jp,ok,ok,2026-03-31,2006-03-23,"""Active""",valid,FAIL_2Y
+thick.jp,thick.jp,ok,ok,,,null,valid,FAIL_2Y
 thingdust.io,thingdust.io,ok,ok,2025-09-11,2016-09-11,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
-thingdustdata.com,thingdustdata.com,ok,ok,2026-02-25,2017-02-25,"[""Domain Status:"", ""clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
+thingdustdata.com,thingdustdata.com,ok,ok,2026-02-25,2017-02-25,"""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""",valid,FAIL_2Y
 thruhere.net,thruhere.net,ok,ok,2026-07-11,2005-07-11,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
 tickets.io,tickets.io,ok,ok,2026-06-30,2004-06-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-to.leg.br,to.leg.br,ok,ok,,2011-08-02,"[""20250615 DSOK"", ""published""]",valid,FAIL_2Y
+to.leg.br,to.leg.br,ok,ok,,2011-08-02,"[""20250616 DSOK"", ""published""]",valid,FAIL_2Y
 togliatti.su,togliatti.su,ok,ok,2025-09-30,2000-10-12,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
 tonkotsu.jp,tonkotsu.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
 toolforge.org,toolforge.org,ok,ok,2026-06-07,2017-06-07,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",invalid,FAIL_2Y
@@ -1504,11 +1504,11 @@ uber.space,uber.space,ok,ok,2026-03-11,2015-03-11,"[""clientTransferProhibited h
 uberspace.de,uberspace.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 ufcfan.org,ufcfan.org,ok,ok,2026-09-10,2009-09-10,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 uh-oh.jp,uh-oh.jp,ok,ok,2025-07-31,2004-07-08,"[""Active""]",valid,FAIL_2Y
-under.jp,under.jp,ok,ok,2025-07-31,2003-07-01,"""Active""",valid,FAIL_2Y
-undo.jp,undo.jp,ok,ok,2025-09-30,2005-09-27,"[""Active""]",valid,FAIL_2Y
+under.jp,under.jp,ok,ok,2025-07-31,2003-07-01,"[""Active""]",valid,FAIL_2Y
+undo.jp,undo.jp,ok,ok,2025-09-30,2005-09-27,"""Active""",valid,FAIL_2Y
 unison-services.cloud,unison-services.cloud,ok,ok,2026-08-28,2023-08-28,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 unusualperson.com,unusualperson.com,ok,ok,2026-09-28,2002-09-28,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
-upper.jp,upper.jp,ok,ok,,,null,valid,FAIL_2Y
+upper.jp,upper.jp,ok,ok,2025-07-31,2003-07-01,"[""Active""]",valid,FAIL_2Y
 upsun.app,upsun.app,ok,ok,,,null,valid,FAIL_2Y
 urown.cloud,urown.cloud,ok,ok,2026-03-10,2016-03-10,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 usercontent.goog,usercontent.goog,ok,ok,,,null,valid,FAIL_2Y
@@ -1517,17 +1517,18 @@ utwente.io,utwente.io,ok,ok,2026-03-19,2018-03-19,"[""ok https://icann.org/epp#o
 v-info.info,v-info.info,ok,ok,2026-05-23,2008-05-23,"[""autoRenewPeriod https://icann.org/epp#autoRenewPeriod"", ""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 vapor.cloud,vapor.cloud,ok,ok,2026-02-23,2016-02-23,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 vaporcloud.io,vaporcloud.io,ok,ok,2026-01-12,2017-01-12,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
-velvet.jp,velvet.jp,ok,ok,2025-06-30,2002-06-01,"[""Active""]",valid,FAIL_2Y
+velvet.jp,velvet.jp,ok,ok,,,null,valid,FAIL_2Y
 vercel.app,vercel.app,ok,ok,,,null,invalid,FAIL_2Y
 vercel.dev,vercel.dev,ok,ok,,,null,invalid,FAIL_2Y
-verse.jp,verse.jp,ok,ok,,,null,valid,FAIL_2Y
+verse.jp,verse.jp,ok,ok,2026-03-31,2006-03-23,"[""Active""]",valid,FAIL_2Y
 versus.jp,versus.jp,ok,ok,2025-07-31,2003-07-01,"[""Active""]",valid,FAIL_2Y
 veterinaire.fr,veterinaire.fr,ok,ok,2025-10-22,1994-12-31,"[""ACTIVE"", ""active"", ""associated"", ""ok""]",valid,FAIL_2Y
 vipsinaapp.com,vipsinaapp.com,ok,ok,2026-08-07,2013-08-07,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""clientUpdateProhibited https://www.icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 virtual-user.de,virtual-user.de,ok,ok,,,"[""connect""]",invalid,FAIL_2Y
 virtualserver.io,virtualserver.io,ok,ok,2026-02-06,2013-02-06,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 virtualuser.de,virtualuser.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
-vivian.jp,vivian.jp,ok,ok,2026-05-31,2002-05-01,"[""Active""]",valid,FAIL_2Y
+vistablog.ir,vistablog.ir,ok,ok,,,null,valid,FAIL_2Y
+vivian.jp,vivian.jp,ok,ok,2026-05-31,2002-05-01,"""Active""",valid,FAIL_2Y
 vladikavkaz.ru,vladikavkaz.ru,ok,ok,2025-10-31,1997-10-08,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
 vladikavkaz.su,vladikavkaz.su,ok,ok,2025-09-30,1999-06-18,"[""REGISTERED, DELEGATED""]",valid,FAIL_2Y
 vladimir.ru,vladimir.ru,ok,ok,2025-10-31,1996-10-27,"[""REGISTERED, DELEGATED, VERIFIED""]",valid,FAIL_2Y
@@ -1560,7 +1561,7 @@ webspace.rocks,webspace.rocks,ok,ok,2025-09-09,2014-09-09,"[""ok https://icann.o
 webspaceconfig.de,webspaceconfig.de,ok,ok,,,"[""connect""]",valid,FAIL_2Y
 webthings.io,webthings.io,ok,ok,2025-08-26,2020-08-26,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 weeklylottery.org.uk,weeklylottery.org.uk,ok,ok,2026-01-08,2010-01-08,"[""Registered until expiry date.""]",valid,FAIL_2Y
-whitesnow.jp,whitesnow.jp,ok,ok,2026-04-30,2002-04-17,"""Active""",valid,FAIL_2Y
+whitesnow.jp,whitesnow.jp,ok,ok,2026-04-30,2002-04-17,"[""Active""]",valid,FAIL_2Y
 wiardweb.com,wiardweb.com,ok,ok,2025-11-12,2005-11-12,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 windows.net,windows.net,ok,ok,2026-06-04,1995-08-10,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",invalid,FAIL_2Y
 windsurf.app,windsurf.app,ok,ok,,,null,valid,FAIL_2Y
@@ -1585,7 +1586,7 @@ x0.com,x0.com,ok,ok,2025-07-09,1997-07-10,"[""clientDeleteProhibited  https://ic
 x0.to,x0.to,ok,ok,,,null,valid,FAIL_2Y
 x443.pw,x443.pw,ok,ok,2025-09-26,2015-09-26,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 xii.jp,xii.jp,ok,ok,2025-09-30,2005-09-27,"[""Active""]",valid,FAIL_2Y
-xmit.co,xmit.co,NXDOMAIN,ok,2026-11-09,2023-11-09,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
+xmit.co,xmit.co,NXDOMAIN,ok,2026-11-09,2023-11-09,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 xmit.dev,xmit.dev,ok,ok,,,null,valid,FAIL_2Y
 xn--41a.xn--p1acf,xn--41a.xn--p1acf,ok,ok,,,null,valid,FAIL_2Y
 xn--80aaa0cvac.xn--p1acf,xn--80aaa0cvac.xn--p1acf,ok,ok,,,null,valid,FAIL_2Y
@@ -1599,7 +1600,7 @@ xn--h1aliz.xn--p1acf,xn--h1aliz.xn--p1acf,ok,ok,,,null,valid,FAIL_2Y
 xn--j1adp.xn--p1acf,xn--j1adp.xn--p1acf,ok,ok,,,null,valid,FAIL_2Y
 xn--j1aef.xn--p1acf,xn--j1aef.xn--p1acf,ok,ok,,,null,valid,FAIL_2Y
 xn--j1ael8b.xn--p1acf,xn--j1ael8b.xn--p1acf,ok,ok,,,null,valid,FAIL_2Y
-xnbay.com,xnbay.com,ok,ok,2026-06-02,2016-06-02,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
+xnbay.com,xnbay.com,ok,ok,2026-06-02,2016-06-02,"[""clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited"", ""clientDeleteProhibited https://www.icann.org/epp#clientDeleteProhibited"", ""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"", ""clientUpdateProhibited https://www.icann.org/epp#clientUpdateProhibited""]",valid,FAIL_2Y
 xs4all.space,xs4all.space,ok,ok,2026-02-09,2017-02-09,"[""ok https://icann.org/epp#ok""]",valid,FAIL_2Y
 yandexcloud.net,yandexcloud.net,ok,ok,2025-08-03,2018-08-03,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",valid,FAIL_2Y
 ynh.fr,ynh.fr,ok,ok,2026-04-02,2018-04-02,"[""ACTIVE"", ""active"", ""associated"", ""not identified""]",valid,FAIL_2Y
