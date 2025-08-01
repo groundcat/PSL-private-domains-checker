@@ -15,7 +15,6 @@ firewalledreplit.co,firewalledreplit.co,NXDOMAIN,ok,2026-05-04,2022-05-04,"[""cl
 her.name,her.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 his.name,his.name,NXDOMAIN,ok,,,null,invalid,FAIL_2Y
 krellian.net,krellian.net,ERROR,ok,2026-03-30,2007-03-30,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited"", ""clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited""]",ERROR,FAIL_2Y
-logoip.de,logoip.de,NXDOMAIN,ok,,,"[""connect""]",valid,FAIL_2Y
 mein-vigor.de,mein-vigor.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
 my-vigor.de,my-vigor.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
 my-wan.de,my-wan.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
@@ -28,6 +27,7 @@ onavstack.net,onavstack.net,NXDOMAIN,ok,2026-01-28,2021-01-28,"[""ok https://ica
 scrysec.com,scrysec.com,NXDOMAIN,ok,2026-08-13,2017-08-13,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
 sdscloud.pl,sdscloud.pl,NXDOMAIN,ok,2025-10-29,2017-10-29,null,invalid,FAIL_2Y
 shw.io,shw.io,NXDOMAIN,ok,2025-10-02,2016-10-02,"[""clientTransferProhibited https://icann.org/epp#clientTransferProhibited""]",invalid,FAIL_2Y
+sinaapp.com,sinaapp.com,NXDOMAIN,ok,2027-06-29,2009-06-29,"[""ok https://www.icann.org/epp#ok"", ""serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited"", ""serverTransferProhibited https://icann.org/epp#serverTransferProhibited"", ""serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited""]",valid,FAIL_2Y
 syno-ds.de,syno-ds.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
 synology-diskstation.de,synology-diskstation.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
 synology-ds.de,synology-ds.de,NXDOMAIN,ok,,,"[""connect""]",invalid,FAIL_2Y
